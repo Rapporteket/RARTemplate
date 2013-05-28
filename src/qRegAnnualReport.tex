@@ -1,0 +1,442 @@
+\documentclass[norsk, a4paper, twocolumn]{report}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{hyperref}
+\usepackage{babel}
+\usepackage{authblk}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{color}
+
+% Sett registerets navn
+\def \registernavn {\textit{Navn på register}}
+
+%% tittelting
+\title{\registernavn \\ \textbf{Årsrapport \the\year}}
+
+\author[1]{Ola Normann}
+\author[2]{Medel Svensson}
+\author[1]{Kari Normann}
+\affil[1]{et Sykehus, et Foretak, et Sted}
+\affil[2]{en annen adresse, et annet Sted}
+
+\renewcommand\Authands{ og }
+\renewcommand\Authfont{\scshape}
+\renewcommand\Affilfont{\itshape\small}
+
+% stil for veiledende tekst
+\definecolor{guidegray}{rgb}{0.2,0.2,0.2}
+\newcommand{\guide}[1] {
+	\textit{[\textcolor{guidegray}{#1}]}
+	}
+%% ---
+
+
+\begin{document}
+
+
+\maketitle
+
+\guide{Dette må du gjøre}
+
+\onecolumn
+%\frontmatter
+
+
+
+\chapter*{Om årsrapportmalen}
+Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
+kvalitetsregistre gjøre på bestilling av den interregionale styringsgruppen
+(styringsgruppen).
+SKDE står for det praktiske arbeidet med malen, og innholdet er basert på
+en rekke vedtak gjort i styringsgruppen samt innspill til justering fra
+relevante aktører i registermiljøet.
+
+Ved bruk av malen til etablering av faktiske årsrapporter skal informasjonen
+som inngår i dette kapittelet fjernes.
+
+Malen vil være et levende dokument som
+forvaltes av SKDE som fortløpende innarbeider alle vedtatte endringer. Siste
+versjon av malen vil således kunne fås ved henvendelse til SKDE. Dokumentet
+kan fritt distribueres.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{lrp{8cm}l}
+    \hline
+    Versjon & Dato & Logg & Ansvarlig \\
+    \hline
+    0.1 & 24. januar 2013 & Opprettet første gang & Are Edvardsen \\
+    0.2 & 1. februar 2013 & Endret etter innspill fra nodemøtet &
+    Are Edvardsen \\
+    0.3 & 14. mars 2013 & Endret etter innspill fra Leif Ivar Havelin,
+    Svein Rotevatn,
+    Reinhard Seifert, Sandra Julsen Hollung, Gro Andersen, Tore Solberg og
+    Anne Marie Fenstad & Are Edvardsen \\
+    0.4 & 2. april 2013 & Mindre endringer etter første møte i ekspertgruppen &
+    Are Edvardsen \\
+    \hline
+  \end{tabular}
+  \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
+  oppføring i denne tabellen.}
+  \label{tab:log}
+\end{table}
+
+
+%\mainmatter
+
+\tableofcontents
+\part{Rapportsammendrag}
+
+\chapter{Oppsummering}
+
+
+%\onecolumn
+
+% for å se hvordan dette kan ta seg ut i tabellform, lag en fylltekst
+\def \fyll {På den ene siden går det stadig oppover, men på den andre går
+det lukt åt skogen. Ellers er det mest på det jevne og litt rundtomkring\ldots}
+
+\begin{longtable}{lp{5cm}p{8cm}}
+  \caption[Sammendrag av status for \registernavn]
+  {Sammendrag av status for \registernavn. Detajert beskrivelse finnes i hvert
+  enkelt av kapitlene som tabellen viser til.} \\
+    \hline
+    Kap. & Kategori & Sammendrag av status \\
+    \hline
+    \endfirsthead
+    \caption[]{forts.}\\
+    \hline
+    Kap.  & Kategori & Sammendrag av status \\
+    \hline
+    \endhead
+    \hline
+    \endfoot
+    \hline
+    \endlastfoot
+     & \multicolumn{2}{l}{\textbf{\nameref{par:reg}}} \\
+    \ref{sec:bak} & \nameref{sec:bak} & \fyll \\
+    \ref{sec:for} & \nameref{sec:for} & \fyll\\
+    \ref{cha:led} & \nameref{cha:led} & \fyll\\
+    \ref{cha:jur} & \nameref{cha:jur} & \fyll\\[8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:dek}}} \\
+    \ref{sec:reg} & \nameref{sec:reg} & \fyll \\
+    \ref{sec:enh} & \nameref{sec:enh} & \fyll \\
+    \ref{sec:met} & \nameref{sec:met} & \fyll \\
+    \ref{sec:endek} & \nameref{sec:endek} & \fyll \\
+    \ref{sec:ind} & \nameref{sec:ind} & \fyll \\[8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:kva}}} \\
+    \ref{sec:sik} & \nameref{sec:sik} & \fyll \\
+    \ref{sec:metval} & \nameref{sec:metval} & \fyll \\
+    \ref{sec:valdat} & \nameref{sec:valdat} & \fyll \\[8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:dat}}} \\
+    \ref{sec:metfan} & \nameref{sec:metfan} & \fyll \\
+    \ref{sec:resfag} & \nameref{sec:resfag} & \fyll \\
+    \ref{sec:resled} & \nameref{sec:resled} & \fyll \\
+    \ref{sec:respas} & \nameref{sec:respas} & \fyll \\ [8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:fag}}} \\ 
+    \ref{sec:regspe} & \nameref{sec:regspe} & \fyll \\
+    \ref{sec:nasret} & \nameref{sec:nasret} & \fyll \\
+    \ref{sec:retbru} & \nameref{sec:retbru} & \fyll \\
+    \ref{sec:brures} & \nameref{sec:brures} & \fyll \\
+    \ref{sec:evakva} & \nameref{sec:evakva} & \fyll \\[8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:for}}} \\     
+    \ref{sec:samfag} & \nameref{sec:samfag} & \fyll \\
+    \ref{sec:vitarb} & \nameref{sec:vitarb} & \fyll \\[8pt]
+     & \multicolumn{2}{l}{\textbf{\nameref{cha:pas}}} \\
+    \ref{sec:demuli} & \nameref{sec:demuli} & \fyll \\
+    \ref{sec:sosuli} & \nameref{sec:sosuli} & \fyll \\
+    \ref{sec:pasutk} & \nameref{sec:pasutk} & \fyll \\
+  \label{tab:sta}
+\end{longtable}
+
+\twocolumn
+
+
+\part{Registerbeskrivelse}\label{par:reg}
+
+\chapter{Rasjonale}
+
+\section{Bakgrunn for registeret}\label{sec:bak}
+
+\section{Registerets formål}\label{sec:for}
+
+\chapter{Faglig ledelse og databehandleransvar}\label{cha:led}
+
+\chapter{Juridisk hjemmelsgrunnlag}\label{cha:jur}
+
+
+
+
+\part{Status og evaluering}
+
+
+\chapter{Dekningsgrad}\label{cha:dek}
+Status og evaluering av registerets dekningsgrad er gitt under og et sammendrag
+av dette fins i Tabell \ref{tab:sta}.
+
+\section{Antall registreringer}\label{sec:reg}
+\guide{Per 31. desember for rapporteringsåret, angi totalt antall
+hendelser og personer som disse fordeler seg på. Kan også brytes opp antall
+per år eller endringer mellom år.}
+
+\section{Antall registrerende enheter}\label{sec:enh}
+\guide{Per 31. desember for rapporteringsåret, angi antall registrerende
+enheter/avdelinger samt hvor mange som eventuelt mangler.}
+\section{Metode for beregning av dekningsgrad}\label{sec:met}
+\guide{Angi kilde/register som er brukt, for hvilken periode bergningen
+gjelder for og hvordan analysen er gjort (metode).}
+\section{Dekningsgrad på enhetsnivå}\label{sec:endek}
+\guide{Kan slås sammen med kap. \ref{sec:enh}.}
+
+\section{Dekningsgrad på hendelsesnivå}\label{sec:ind}
+\guide{Angi resultat av dekningsgradsanalyse på hendelsesnivå,
+eventuelt (antatte) endringer fra tidligere år.}
+
+
+\chapter{Datakvalitet}\label{cha:kva}
+Status og evaluering av registerets  datakvalitet er gitt under og et sammendrag
+av dette fins i Tabell \ref{tab:sta}.
+
+\section{Metoder for intern sikring av datakvalitet}\label{sec:sik}
+\textit{Beskriv infrastruktur, rutiner og/eller punktaksjoner, eksempelvis
+opplæring, informasjonsarbeid, tekniske støttesystemer og tilbakekobling mello
+register og innregistrerende enheter.}
+
+\section{Metode for validering av data i registeret}\label{sec:metval}
+\textit{Beskriv hvilke eksterne kilder (registre) som er benyttet og hvordan
+dette er sammenholdt med registerets data (design/subsampling).} 
+
+\section{Vurdering av datakvalitet}\label{sec:valdat}
+\textit{Angi viktige funn og en vurdering av resultatene fra
+valideringsstudien slik som funn av systematiske feil, tilfeldige feil og
+antatt effekt dette har på validitet for hele registeret.}
+
+
+
+\chapter{Datainnsamling og formidling av resultater}\label{cha:dat}
+Status og evaluering av registerets  datafangst og formidling av resultater
+er gitt under og et sammendrag av dette fins i Tabell \ref{tab:sta}.
+
+\section{Metoder for fangst av data}\label{sec:metfan}
+\textit{Beskriv hva/hvem som registrerer, eksempelvis sykehusenes egne
+fagsystemer, helsearbeidere, pasienter og hvordan innsamlingen skjer,
+eksempelvis elektronisk eller på papirskjema.}
+
+\section{Resultater til deltagende fagmedisinske enheter}\label{sec:resfag}
+\textit{Beskriv form og frekvens,  eventuelt tilbakemeldinger på relevans,
+endringsønsker mm.}
+
+\section{Resultater til administrasjon og ledelse}\label{sec:resled}
+\textit{Beskriv form og frekvens og gi en vurdering av om, og hvordan denne
+informasjonen brukes av ledelse og administrasjon.}
+
+\section{Resultater til pasienter}\label{sec:respas}
+\textit{Beskriv form og frekvens og eventulet tilbakemeldinger fra pasienter,
+særlig i forhold til nytten av informasjonen fra registeret.}
+
+\section{Offentliggjøring av resultater på sykehusnivå}\label{sec:off}
+\textit{Beskriv hvor/til hvem, form og frekvens.}
+
+
+
+
+\chapter{Fagutvikling og kvalitetsforbedring av tjenesten}\label{cha:fag}
+Status og evaluering av registerets fagutvikling og gjennomførte tiltak for
+kvalitetsforbedring er gitt under og et sammendrag av dette fins i Tabell
+\ref{tab:sta}.
+\section{Registerets spesifikke kvalitetsmål}\label{sec:regspe}
+\textit{Beskriv de mål/variabler/indikatorer som angir grad av kvalitet.
+Splittes opp i resultatmessige-, strukturelle- og prosessuelle mål.}
+
+\subsection{Resultatmål}
+
+\subsection{Strukturmål}
+
+\subsection{Prosessmål}
+
+\section{Nasjonale retningslinjer utarbeidet av registeret}\label{sec:nasret}
+\textit{Beskriv de nasjonale retningslinjer som er etablert av registeret.}
+
+\section{I hvor stor grad tas retningslinjene i bruk?}\label{sec:retbru}
+\textit{Beskriv i hvor stor grad de nasjonale retningslinjene er tatt i
+aktiv bruk.}
+
+\section{Deltagende enheters bruk av resultater til egen kvalitetsforbedring}\label{sec:brures}
+\textit{I enheter som registrerer inn til registeret, angi konkrete prosjekter
+for kvalitetsforbedring basert på resultater fra registeret. Beskriv
+hvordan registeret ved styringsgruppen bidrar til oppstart og gjennomføring
+av kvalitetsforbedringsarbeid lokalt hos innregistrerende enheter.}
+
+\section{Evaluering av kvalitetsforbedrende tiltak (endret praksis)}\label{sec:evakva}
+\textit{Beskriv resultater av gjennomførte tiltak for kvalitetsforbedringer.}
+
+\chapter{Forskning og internasjonalt samarbeid}\label{cha:for}
+Status og evaluering av registerets vitenskapelige aktivitet og internasjonalt
+samarbeid er gitt under og et sammendrag av dette fins i Tabell \ref{tab:sta}.
+
+\section{Samarbeid med søsterregistre eller andre fagmiljø utenfor Norge}\label{sec:samfag}
+\textit{Beskriv eventuelle samarbeid registeret har med tilsvarende miljøer
+utenfor Norge.}
+
+\section{Vitenskapelige arbeider}\label{sec:vitarb}
+\textit{Angi bidrag fra registeret i fagfellevurderte tidsskrifter,
+vitenskapelige konferanser, utdanning av doktorgradsstipendiater eller
+lignende.}
+
+
+\chapter{Pasienterfaring, demografi og sosiale forhold}\label{cha:pas}
+Status og evaluering av registerets bruk av pasientrapporterte resultater samt
+hvordan resultater fra registereret variere med demografiske og sosiale forhold
+i pasientpopulasjonen. Et sammendrag av dette fins i Tabell \ref{tab:sta}.
+
+\section{Demografiske ulikheter}\label{sec:demuli}
+\textit{Angi hvike variabler som er tilgjengelig i registeret (alder, kjønn,
+bosted) og viktige funn i forhold til registerets kvalitetsmål. Vis til del
+\ref{part:res} av årsrapporten.}
+
+\section{Sosiale ulikheter}\label{sec:sosuli}
+\textit{Beskriv hvilke målinger som benyttes (sivilstatus, utdanning, inntekt,
+etnisitet) og viktige funn i forhold til registerets kvalitetsmål. Vis til del
+\ref{part:res} i årsrapporten.}
+
+\section{Pasientrapporterte utkommemål}\label{sec:pasutk}
+\textit{Beskriv hvilke instrumenter som benyttes og gi et sammendrag av de
+viktigste funn. Vis til del \ref{part:res} av årsrapporten.}
+
+
+
+
+
+
+
+
+
+
+
+\part{Tiltak}
+\textit{Basert på beskrevet status og evaluering av registeret, beskriv de
+tiltak som er planlagt gjennomført fra og med neste periode.}
+
+\chapter{Dekningsgrad}
+\fyll
+
+\section{Nye registrerende enheter}
+\fyll
+
+\section{Økning av dekningsgrad på hendelsesnivå}
+\fyll
+
+\chapter{Datakvalitet}
+\fyll
+
+\section{Endringer av intern kvalitetssikring av data}
+\fyll
+
+\section{Oppølging av resultater fra validering mot eksterne kilder}
+\fyll
+
+\chapter{Datainnsamling og formidling av resultater}
+\fyll
+
+\section{Forbedring av metoder for fangst av data}
+\fyll
+
+\section{Forbedring av resultatformidling til fagmedisinske enheter}
+\fyll
+
+\section{Forbedring av resultatformidling til administrasjon og ledelse}
+\fyll
+
+\section{Forbedring av resultatformidling til pasienter}
+\fyll
+
+\section{Forbedring av hvordan resultater på sykehusnivå offentliggjøres}
+\fyll
+
+\chapter{Fagutvikling og kvalitetsforbedring av tjenesten}
+\fyll
+
+\section{Nye kvalitetsmål}
+\fyll
+
+\section{Nye nasjonale retningslinjer}
+\fyll
+
+\section{Implementering av retningslinjer}
+\fyll
+
+\section{Økt bruk av resultater til kvalitetsforbedring i hver enkelt enhet}
+\fyll
+
+\section{Prioriterte, faglige forbedringsområder}
+\fyll
+
+\chapter{Forskning og internasjonalt samarbeid}
+\fyll
+
+\section{Nye, internasjonale samarbeidspartnere}
+\fyll
+
+\section{Forskningsprosjekter og vitenskapelig aktivitet}
+\fyll
+
+\chapter{Pasienterfaring, demografi og sosiale forhold}
+\fyll
+
+\section{Nye pasientrapporterte resultater som skal inn i registeret}
+\fyll
+
+\section{Utvidet bruk av pasientrapporterte resultater}
+\fyll
+
+\section{Nye demografiske variabler som skal inn i registeret}
+\fyll
+
+\section{Utvidet bruk av demografiske variabler}
+\fyll
+
+\section{Nye variabler som beskriver sosiale forhold hos pasienten}
+\fyll
+
+\section{Utvidet bruk av resultater som beskriver sosiale ulikheter}
+\fyll
+
+
+
+\part{Foretaksspesifikk rapportering}\label{part:spe}
+\chapter{Pliktig rapportering til databehandlingsansvarlig foretak}
+\textit{Her inngår de rappoteringspunkter som det databehandlingsansvarlige
+foretak for registeret måtte ha som krav til sine registre utover det som
+allerede er dekket i denne malen. Del \ref{part:spe} kan slettes i sin helhet
+hvis slike foretaksspesifikke krav til rapportering ikke foreligger.}
+
+\section{Første tema}
+\section{Andre tema}
+\section{Tredje tema}
+
+
+
+\part{Registerfaglige resultater (tradisjonell årsrapport)}\label{part:res}
+
+\textit{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet. Dette
+er ``Årsrapporten'' i tradisjonell forstand.}
+
+%\chapter{Første tema}
+%\lipsum
+
+%\chapter{Andre tema}
+%\lipsum
+
+%\chapter{Tredje tema}
+%\lipsum
+
+
+%\listoffigures
+\listoftables
+
+
+
+
+\end{document}
