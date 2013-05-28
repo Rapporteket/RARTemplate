@@ -1,3 +1,5 @@
+% For print, bruk dokumentklassen 'book'. Bruk 'report' for å unngå blanke
+% sider
 \documentclass[norsk, a4paper, twocolumn]{report}
 
 \usepackage[utf8x]{inputenc}
@@ -13,7 +15,7 @@
 \def \registernavn {\textit{Navn på register}}
 
 %% tittelting
-\title{\registernavn \\ \textbf{Aarsrapport \textit{[årstall]}\\
+\title{\registernavn \\ \textbf{Årsrapport \textit{[årstall]}\\
 Plan for forbedringstiltak \textit{[årstall+1]}}}
 
 \author[1]{Ola Normann}
@@ -44,7 +46,7 @@ Plan for forbedringstiltak \textit{[årstall+1]}}}
 %\frontmatter
 
 
-
+% Ta ut hele kapittelet ved bruk til faktisk rapport
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
 kvalitetsregistre gjøres på bestilling av den interregionale styringsgruppen
@@ -169,7 +171,7 @@ det lukt åt skogen. Ellers er det mest på det jevne og litt rundtomkring\ldots
 konsesjonssøknad etc.}
 
 
-\section{Rasjonale}\label{cha:ras}
+\section{Rasjonale}
 \subsection{Bakgrunn for registeret}\label{sec:bak}
 \subsection{Registerets formål}\label{sec:for}
 
