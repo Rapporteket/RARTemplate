@@ -51,7 +51,7 @@ Plan for forbedringstiltak \textit{[årstall+1]}}}
 % Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
 % Tas inn igjen ved å fjerne løkka rundt
 
-\iffalse
+%\iffalse
 
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
@@ -100,10 +100,10 @@ kan fritt distribueres.
   \label{tab:log}
 \end{table}
 
-\fi
+%\fi
 
 \chapter*{Veiledning til utfylling}
-
+\guide{...Utarbeides før utsending til registrene, ultimo juni 2013...}
 
 
 %\mainmatter
@@ -112,7 +112,7 @@ kan fritt distribueres.
 \part{Årsrapport}\label{par:rap}
 
 \chapter{Sammendrag}
-\guide{Kortfattet sammendrag av det viktigste i årsrapporten.}
+\guide{Kortfattet sammendrag av de viktigste elemter man fra registerets side ønsker å formidle i årsrapporten.}
 
 
 
@@ -123,8 +123,7 @@ kan fritt distribueres.
 
 
 \chapter{Registerbeskrivelse}\label{cha:reg}
-\guide{Alt i dette kapitlet hentes fra protokoll, søknad om nasjonal status,
-konsesjonssøknad etc.}
+\guide{Informasjon til dette kapitlet hentes fra protokoll, søknad om nasjonal status, konsesjonssøknad etc.}
 
 
 \section{Bakgrunn og formål}
@@ -140,9 +139,9 @@ konsesjonssøknad etc.}
 
 
 \chapter{Metoder for fangst av data}
-\guide{Beskriv hva/hvem som registrerer, eksempelvis sykehusenes egne
-fagsystemer, helsearbeidere, pasienter og hvordan innsamlingen skjer,
-eksempelvis elektronisk eller på papirskjema.}
+\guide{Beskriv hva/hvem som registrerer (eksempelvis sykehusenes egne
+fagsystemer, helsearbeidere, pasienter) og hvordan innsamlingen skjer
+(eksempelvis elektronisk eller på papirskjema).}
 
 
 
@@ -151,8 +150,8 @@ eksempelvis elektronisk eller på papirskjema.}
 \guide{Status og evaluering av registerets  datakvalitet.}
 
 \section{Metoder for intern sikring av datakvalitet}\label{sec:sik}
-\guide{Beskriv infrastruktur, rutiner og/eller punktaksjoner, eksempelvis
-opplæring, informasjonsarbeid, tekniske støttesystemer og tilbakekobling mellom register og innregistrerende enheter som ivaretar riktige og
+\guide{Beskriv infrastruktur, rutiner og/eller punktaksjoner (eksempelvis
+opplæring, informasjonsarbeid, tekniske støttesystemer) og tilbakekobling mellom register og innregistrerende enheter som ivaretar riktige og
 komplette data.}
 
 \section{Metode for validering av data i registeret}\label{sec:metval}
@@ -176,12 +175,12 @@ forholdet mellom registrerte individer og det man basert på uavhengige
 kilder (f.eks.
 \href{http://www.kvalitetsregistre.no/dekningsgradsanalyser/category358.html}
 {NPR}\footnote{\url{http://www.kvalitetsregistre.no/dekningsgradsanalyser/category358.html}})
-vet eller antar skal være det totale antall mulige
+vet eller antar skal være det totale antall mulige registrerbare
 individer i det aktuelle året.}
 
 \section{Antall registreringer}\label{sec:reg}
-\guide{Per 31. desember for rapporteringsåret, angi totalt antall
-individer/hendelser. Kan også brytes opp i antall per år.}
+\guide{Per 31. desember for rapporteringsåret, angi antall
+individer/hendelser totalt og per institusjon. Kan også brytes opp i antall per år.}
 
 \section{Metode for beregning av dekningsgrad}\label{sec:met}
 \guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
@@ -207,26 +206,26 @@ i rapporteringsperioden.}
 Se også
 \href{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Handbok_120411_siste.pdf}{Registerhåndboka}
 \footnote{\url{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Handbok_120411_siste.pdf}}
-for ytterligere beskrivelse. I den grad registeret har etablert (nasjonale)
+for ytterligere beskrivelse. I den grad registeret registrerer nasjonale
 kvalitetsindikatorer, tas dette med.}
 
 
 
 
 
-\section{Bidrag til utvikling av nasjonale retningslinjer og handlingsplaner/program}\label{sec:retut}
+\section{Bidrag til utvikling av nasjonale retningslinjer og handlingsplaner/-program}\label{sec:retut}
 \guide{I den grad det er relevant, beskriv hvordan registeret bidrar til
-etablering av nasjonale retningslinjer}
+etablering av nasjonale retningslinjer, handlingsplaner/-program}
 
 \section{Bruk av nasjonale retningslinjer}\label{sec:retbru}
 \guide{I den grad de eksisterer, beskriv i hvor stor grad deltagende enheter
 etterlever etablerte nasjonale retningslinjer.}
 
 
-\section{Deltagende enheters bruk av resultater til egen kvalitetsforbedring}\label{sec:brures}
+\section{Kvalitetsforbedrende tiltak initiert av registeret}\label{sec:brures}
 \guide{Angi konkrete prosjekter
 for kvalitetsforbedring initiert av registeret. Beskriv
-hvordan registeret ved styringsgruppen bidrar til oppstart og gjennomføring
+hvordan registeret bidrar til oppstart og gjennomføring
 av kvalitetsforbedringsarbeid lokalt hos innregistrerende institusjoner.}
 
 \section{Evaluering av kvalitetsforbedrende tiltak (endret praksis)}\label{sec:evakva}
@@ -246,12 +245,12 @@ av resultater fra registeret.
 Resultater i seg selv beskrives i kap. \ref{part:res}.}
 
 
-\section{Resultater til deltagende fagmiljø}\label{sec:resfag}
+\section{Resultater tilbake til deltagende fagmiljø}\label{sec:resfag}
 \guide{Beskriv form og frekvens,  eventuelt tilbakemeldinger på relevans,
 endringsønsker mm.}
 
 \section{Resultater til administrasjon og ledelse}\label{sec:resled}
-\guide{Beskriv form og frekvens og gi en vurdering av om, og hvordan denne
+\guide{Beskriv form og frekvens, og hvordan denne
 informasjonen formidles til ledelse og administrasjon.}
 
 \section{Resultater til pasienter}\label{sec:respas}
@@ -259,7 +258,7 @@ informasjonen formidles til ledelse og administrasjon.}
 særlig i forhold til nytten av informasjonen fra registeret.}
 
 \section{Offentliggjøring av resultater på institusjonsnivå}\label{sec:off}
-\guide{Beskriv hvor/til hvem, form og frekvens.}
+\guide{Beskriv hvor/til hvem, form og frekvens. Resultater i seg selv beskrives i kap. \ref{part:res}.}
 
 
 
@@ -267,8 +266,7 @@ særlig i forhold til nytten av informasjonen fra registeret.}
 
 
 \chapter{Samarbeid og forskning}\label{cha:for}
-\guide{Status og evaluering av registerets vitenskapelige aktivitet og
-internasjonalt samarbeid.}
+\guide{Status og evaluering av samarbeid med andre registre/fagmiljø og  vitenskapelig aktivitet.}
 
 \section{Samarbeid med andre helse- og kvalitetsregistre}\label{sec:samfag}
 \guide{Beskriv eventuelle samarbeid registeret har med andre registre eller relevante fagmiljø, nasjonalt eller internasjonalt.}
@@ -287,19 +285,18 @@ hvordan resultater fra registeret varierer med demografiske og sosiale forhold
 i pasientpopulasjonen.}
 
 \section{Pasientrapporterte resultatmål}\label{sec:pasutk}
-\guide{Beskriv hvilke instrumenter som benyttes og gi et sammendrag av de
-viktigste funn.}
+\guide{Beskriv hvilke instrumenter som benyttes.}
 
 \section{Demografiske ulikheter}\label{sec:demuli}
 \guide{Angi hvilke variabler som er tilgjengelig i registeret (alder, kjønn,
-bosted) og viktige funn i forhold til registerets kvalitetsmål.}
+bosted).}
 
 \section{Sosiale ulikheter}\label{sec:sosuli}
 \guide{Beskriv hvilke målinger som benyttes (sivilstatus, utdanning, inntekt,
-etnisitet) og viktige funn i forhold til registerets kvalitetsmål.}
+etnisitet).}
 
 
-\chapter{Resultater (tradisjonell årsrapport/statistikk)}\label{part:res}
+\chapter{Resultater (tradisjonell årsrapport/-statistikk)}\label{part:res}
 \guide{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet. Dette er ``Årsrapporten'' i tradisjonell forstand.}
 
 
@@ -315,35 +312,40 @@ inngå i en slik beskrivelse. For ytterligere forklaring av de ulike punktene,
 se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
 
 \begin{itemize}
+	\item Datafangst
+	\begin{itemize}
+		\item Forbedring av metoder for fangst av data
+	\end{itemize}
+	  \item Datakvalitet
+	    \begin{itemize}
+	      \item Endringer av rutiner for intern kvalitetssikring av data
+	      \item Oppfølging av resultater fra validering mot eksterne kilder
+	    \end{itemize}
+	
   \item Dekningsgrad
     \begin{itemize}
       \item Nye registrerende enheter/avdelinger
-      \item Forbedring av dekningsgrad for andre observasjoner i registeret
+      \item Forbedring av dekningsgrad på individnivå i registeret
     \end{itemize}
-  \item Datakvalitet
+      \item Fagutvikling og kvalitetsforbedring av tjenesten
+        \begin{itemize}
+          \item Nye kvalitetsmål
+          \item Bidrag til etablering av nasjonale retningslinjer
+          \item Registrerende enheters etterlevelse av nasjonale retningslinjer
+          \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt institusjon
+          \item Prioriterte, faglige forbedringsområder
+        \end{itemize}
+  \item Formidling av resultater
     \begin{itemize}
-      \item Endringer av rutiner for intern kvalitetssikring av data
-      \item Oppfølging av resultater fra validering mot eksterne kilder
-    \end{itemize}
-  \item Datainnsamling og formidling av resultater
-    \begin{itemize}
-      \item Forbedring av metoder for fangst av data
-      \item Forbedring av resultatformidling til fagmedisinske enheter
+      \item Forbedring av resultatformidling til deltagende fagmiljø
       \item Forbedring av resultatformidling til administrasjon og ledelse
       \item Forbedring av resultatformidling til pasienter
-      \item Forbedring av hvordan resultater på sykehusnivå offentliggjøres
+      \item Forbedring av hvordan resultater på institusjonsnivå offentliggjøres
     \end{itemize}
-  \item Fagutvikling og kvalitetsforbedring av tjenesten
+
+  \item Samarbeid og forskning
     \begin{itemize}
-      \item Nye kvalitetsmål
-      \item Bidrag til etablering av nasjonale retningslinjer
-      \item Registrerende enheters etterlevelse av nasjonale retningslinjer
-      \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt enhet
-      \item Prioriterte, faglige forbedringsområder
-    \end{itemize}
-  \item Forskning og internasjonalt samarbeid
-    \begin{itemize}
-      \item Nye, internasjonale samarbeidspartnere
+      \item Nye samarbeidspartnere
       \item Forskningsprosjekter og annen vitenskapelig aktivitet
     \end{itemize}
   \item Pasientrapportering, demografi og sosiale forhold
