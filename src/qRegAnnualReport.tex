@@ -11,6 +11,10 @@
 \usepackage{multicol}
 \usepackage{color}
 
+% Ikke bruk innrykk for nye avsnitt, men heller litt større vertikal avatand
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
 % Sett registerets navn
 \def \registernavn {\textit{Navn på register}}
 
@@ -67,13 +71,16 @@ som inngår i dette kapittelet fjernes.
 Malen vil være et levende dokument som
 forvaltes av SKDE som fortløpende innarbeider alle vedtatte endringer. Siste
 versjon av malen vil således kunne fås ved henvendelse til SKDE. Dokumentet
-kan fritt distribueres.
+kan fritt distribueres.For full utnyttelse av malen bør årsrapporten produseres i \LaTeX. Til dette
+kan man eksempelvis bruke programvaren
+\href{http://texstudio.sourceforge.net/}{TexStudio}\footnote{http://texstudio.sourceforge.net/}
+som er fritt tilgjengelig og gratis i bruk.
 
 \begin{table}[ht]
   \centering
   \begin{tabular}{lrp{8cm}p{2.5cm}}
     \hline
-    Versjon & Dato & Logg & Ansvarlig \\
+    Versjon & Dato & Aktivitet & Ansvarlig \\
     \hline
     0.1 & 24. januar 2013 & Opprettet første gang & Are Edvardsen \\
     0.2 & 1. februar 2013 & Endret etter innspill fra nodemøtet &
@@ -95,6 +102,9 @@ kan fritt distribueres.
     til resten av dokumentet tatt ut & Eva Stensland, Are Edvardsen \\
     0.9 & 13. juni 2013 & Minimale endringer etter inspill fra møte i
     interregional styringsgruppe 12. juni & Eva Stensland \\
+    0.91 & 18. juni 2013 & Nytt kapittel med generell bakgrunn og veiledning.
+    Mindre endringer på form & Eva Stensland, Are Edvarsen \\
+    1.0 & 18. juni 2013 & For bruk i årsrapporter for 2012 & Are Edvardsen \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
@@ -104,8 +114,62 @@ kan fritt distribueres.
 
 %\fi
 
-\chapter*{Veiledning til utfylling}
-\guide{...Utarbeides før utsending til registrene, ultimo juni 2013...}
+\chapter*{Bakgrunn og veiledning til utfylling}
+
+\section*{Bakgrunn}
+En årsrapport fra et medisinsk kvalitetsregister bør utarbeides først og
+fremst for å vise hvilken nytte registeret har hatt for helsetjenesten, og
+hvordan registeret kan brukes til forbedring. Årsrapporten bør utformes slik
+at den også kan leses og forstås av personer utenfor det aktuelle fagmiljø.
+
+Alle nasjonale medisinske kvalitetsregistre skal sende inn årsrapport til adm.
+dir. ved driftsansvarlig RHF innen 15. oktober påfølgende år. Fra og med 2012
+er dette et krav for tildeling av ressurser.
+
+Denne malen for årsrapport er utarbeidet av Nasjonalt servicemiljø for
+kvalitetsregistre på bestilling av interregional styringsgruppe, og ble
+godkjent på møtet i interregional styringsgruppe 12. juni 2013 for bruk av alle
+nasjonale medisinske kvalitetsregistre. Malen inneholder sentrale
+rapporteringselementer som blant annet har sitt utgangspunkt i
+\href{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Stadieinndelingsmodell.pdf}{stadieinndelingssystemet}\footnote{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Stadieinndelingsmodell.pdf}
+for kvalitetsregistre, og en resultatdel.
+
+For å kunne gi en samlet oversikt over nasjonale kvalitetsregistres
+årsrapporter ber vi om at kopi av rapporten også sendes SKDE innen fristen
+15. oktober 2013. \href{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}{Ekspertgruppen}\footnote{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}
+vil i november 2013 gjøre en gjennomgang av alle årsrapportene for 2012, og
+kategorisere de nasjonale kvalitetsregistrene i henhold til
+stadieinndelingssystemet.
+
+Det vil bli gjort en evaluering og eventuelt revisjon av årsrapportmalen etter
+første gangs bruk høsten 2013, og innspill fra kvalitetsregistrene på
+erfaringer med innhold og funksjonalitet er derfor ønskelig.
+
+
+\section*{Veiledning til utfylling}
+
+Kapittel \ref{cha:reg}-\ref{cha:pas} i malen er beskrivende, og utfylles så
+langt det er mulig. Det vil
+være mange registre som mangler informasjon for utfylling av ett eller flere
+underkapitler. Ved manglende informasjon, fjerner man det aktuelle
+underkapitlet. Det er laget en veiledende tekst til alle underkapitler som har
+som hensikt å beskrive hvilken informasjon man ønsker fylt inn. I kapittel
+\ref{cha:dek} og \ref{cha:dat}
+er begrepet ”institusjon” brukt. Her fyller registeret inn informasjon på
+foretaks-, sykehus- eller avdelingsnivå avhengig av hvilken informasjon som er
+tilgjengelig i hvert enkelt register. 
+
+Kapittel \ref{cha:res} er resultatdelen av årsrapporten, og her fyller det
+enkelte
+register inn de resultater (tabeller, figurer og tekst) de ønsker å formidle.
+Det er et ønske om at man viser resultater fra de viktigste kvalitetsmål i
+registeret, og at resultatene formidles på sykehus eller foretaksnivå dersom
+mulig.
+
+I hver helseregion finnes det en representant for det nasjonale servicemiljøet
+for medisinske kvalitetsregistre som kan svare på spørsmål angående
+årsrapporter. Kontaktinformasjon til disse finnes på
+servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158.html}{nettsider}\footnote{http://www.kvalitetsregistre.no/servicemiljoe/category158.html}.
 
 
 %\mainmatter
@@ -114,7 +178,7 @@ kan fritt distribueres.
 \part{Årsrapport}\label{par:rap}
 
 \chapter{Sammendrag}
-\guide{Kortfattet sammendrag av de viktigste elemter man fra registerets side ønsker å formidle i årsrapporten.}
+\guide{Kortfattet sammendrag av de viktigste elementer man fra registerets side ønsker å formidle i årsrapporten.}
 
 
 
@@ -298,7 +362,7 @@ bosted).}
 etnisitet).}
 
 
-\chapter{Resultater (tradisjonell årsrapport/-statistikk)}\label{part:res}
+\chapter{Resultater (tradisjonell årsrapport/-statistikk)}\label{cha:res}
 \guide{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet. Dette er ``Årsrapporten'' i tradisjonell forstand.}
 
 
