@@ -1,6 +1,6 @@
 % For print, bruk dokumentklassen 'book'. Bruk 'report' for å unngå blanke
 % sider
-\documentclass[norsk, a4paper, twocolumn]{book}
+\documentclass[norsk, a4paper, twocolumn]{report}
 
 \usepackage[utf8x]{inputenc}
 \usepackage[colorlinks=true]{hyperref}
@@ -105,6 +105,11 @@ som er fritt tilgjengelig og gratis i bruk.
     0.91 & 18. juni 2013 & Nytt kapittel med generell bakgrunn og veiledning.
     Mindre endringer på form & Eva Stensland, Are Edvarsen \\
     1.0 & 18. juni 2013 & For bruk i årsrapporter for 2012 & Are Edvardsen \\
+     & & & \\
+    1.1 & 4. april 2014 & Endringer ift revidert stadieinndeling. Reversering
+    av tidligere endringer: flytte Resultater frem og ta tilbake
+    tabularisk sammendrag for hjelp til vurdering av stadium & Are Edvardsen,
+    Eva Stensland \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
@@ -180,7 +185,66 @@ servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158
 \chapter{Sammendrag}
 \guide{Kortfattet sammendrag av de viktigste elementer man fra registerets side ønsker å formidle i årsrapporten.}
 
-
+\section{Tabularisk oppsummering}
+% for å se hvordan dette kan ta seg ut i tabellform, lag en fylltekst 	 
+ \def \fyll {På den ene siden går det stadig oppover, men på den andre går 	 
+ det lukt åt skogen. Ellers er det mest på det jevne og litt rundtomkring\ldots} 	 
+  	 
+ \begin{longtable}{lp{5cm}p{8cm}} 	 
+ \caption[Sammendrag av status for \registernavn] 	 
+ {Sammendrag av status for \registernavn. Detaljert beskrivelse finnes i hvert 	 
+ enkelt av kapitlene som tabellen viser til.} \\ 	 
+   \hline 	 
+   Kap. & Kategori & Sammendrag av status \\ 	 
+   \hline 	 
+   \endfirsthead 	 
+   \caption[]{forts.}\\ 	 
+   \hline 	 
+   Kap.  & Kategori & Sammendrag av status \\ 	 
+   \hline 	 
+   \endhead
+   \\
+   \multicolumn{3}{c}{\textit{Tabellen fortsetter på neste side}} \\
+   \hline
+   \endfoot 	 
+   \hline 	 
+   \endlastfoot 	 
+   & \multicolumn{2}{l}{\textbf{\nameref{cha:reg}}} \\ 	 
+   \ref{sec:bak} & \nameref{sec:bak} & \fyll \\ 	 
+   \ref{sec:for} & \nameref{sec:for} & \fyll\\ 	 
+   \ref{cha:led} & \nameref{cha:led} & \fyll\\ 	 
+   \ref{cha:jur} & \nameref{cha:jur} & \fyll\\[8pt] 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:dek}}} \\ 	 
+   \ref{sec:reg} & \nameref{sec:reg} & \fyll \\ 	 
+   \ref{sec:met} & \nameref{sec:met} & \fyll \\ 	 
+   \ref{sec:endek} & \nameref{sec:endek} & \fyll \\ 	 
+   \ref{sec:obs} & \nameref{sec:obs} & \fyll \\ 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:kva}}} \\ 	 
+   \ref{sec:sik} & \nameref{sec:sik} & \fyll \\ 	 
+   \ref{sec:metval} & \nameref{sec:metval} & \fyll \\ 	 
+   \ref{sec:valdat} & \nameref{sec:valdat} & \fyll \\[8pt] 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:dat}}} \\ 	 
+   \ref{sec:metfan} & \nameref{sec:metfan} & \fyll \\ 	 
+   \ref{sec:resfag} & \nameref{sec:resfag} & \fyll \\ 	 
+   \ref{sec:resled} & \nameref{sec:resled} & \fyll \\ 	 
+   \ref{sec:respas} & \nameref{sec:respas} & \fyll \\ 	 
+   \ref{sec:off} & \nameref{sec:off} & \fyll \\[8pt] 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:fag}}} \\ 	 
+   \ref{sec:regspe} & \nameref{sec:regspe} & \fyll \\ 	 
+   \ref{sec:retut} & \nameref{sec:retut} & \fyll \\ 	 
+   \ref{sec:retbru} & \nameref{sec:retbru} & \fyll \\ 	 
+   \ref{sec:brures} & \nameref{sec:brures} & \fyll \\ 	 
+   \ref{sec:evakva} & \nameref{sec:evakva} & \fyll \\ 	 
+   \ref{sec:kom} & \nameref{sec:kom} & \fyll \\[8pt] 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:for}}} \\     	 
+   \ref{sec:samfag} & \nameref{sec:samfag} & \fyll \\ 	 
+   \ref{sec:vitarb} & \nameref{sec:vitarb} & \fyll \\[8pt] 	 
+    & \multicolumn{2}{l}{\textbf{\nameref{cha:pas}}} \\ 	 
+   \ref{sec:pasutk} & \nameref{sec:pasutk} & \fyll \\ 	 
+   \ref{sec:demuli} & \nameref{sec:demuli} & \fyll \\
+   \ref{sec:sosuli} & \nameref{sec:sosuli} & \fyll \\ 	 
+\label{tab:sta} 	 
+\end{longtable}
 
 
 \twocolumn
@@ -307,8 +371,8 @@ hendelser i forbindelse med den behandling som registeret omfatter.}
 
 \chapter{Formidling av resultater}\label{cha:dat}
 \guide{Status og evaluering av formidlingsform- og frekvens
-av resultater fra registeret.
-Resultater i seg selv beskrives i kap. \ref{part:res}.}
+av resultater fra registeret. Resultater i seg selv beskrives i kap.
+\ref{cha:res}.}
 
 
 \section{Resultater tilbake til deltagende fagmiljø}\label{sec:resfag}
@@ -324,7 +388,7 @@ informasjonen formidles til ledelse og administrasjon.}
 særlig i forhold til nytten av informasjonen fra registeret.}
 
 \section{Offentliggjøring av resultater på institusjonsnivå}\label{sec:off}
-\guide{Beskriv hvor/til hvem, form og frekvens. Resultater i seg selv beskrives i kap. \ref{part:res}.}
+\guide{Beskriv hvor/til hvem, form og frekvens. Resultater i seg selv beskrives i kap. \ref{cha:res}.}
 
 
 
