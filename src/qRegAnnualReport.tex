@@ -6,10 +6,10 @@
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{babel}
 \usepackage{authblk}
-\usepackage{lipsum}
 \usepackage{longtable}
 \usepackage{multicol}
 \usepackage{color}
+\usepackage{wasysym}
 
 % Ikke bruk innrykk for nye avsnitt, men heller litt større vertikal avatand
 \setlength{\parindent}{0pt}
@@ -38,6 +38,9 @@ Plan for forbedringstiltak \textit{[årstall+1]}}}
 	\textit{[\textcolor{guidegray}{#1}]}
 	}
 %% ---
+
+% overstyre mulige ord-deling-er
+\hyphenation{stadium-vurder-ing system-atiske pasi-ent-rap-porterte}
 
 
 \begin{document}
@@ -71,8 +74,8 @@ som inngår i dette kapittelet fjernes.
 Malen vil være et levende dokument som
 forvaltes av SKDE som fortløpende innarbeider alle vedtatte endringer. Siste
 versjon av malen vil således kunne fås ved henvendelse til SKDE. Dokumentet
-kan fritt distribueres.For full utnyttelse av malen bør årsrapporten produseres i \LaTeX. Til dette
-kan man eksempelvis bruke programvaren
+kan fritt distribueres. For full utnyttelse av malen bør årsrapporten
+produseres i \LaTeX. Til dette kan man eksempelvis bruke programvaren
 \href{http://texstudio.sourceforge.net/}{TexStudio}\footnote{http://texstudio.sourceforge.net/}
 som er fritt tilgjengelig og gratis i bruk.
 
@@ -106,9 +109,12 @@ som er fritt tilgjengelig og gratis i bruk.
     Mindre endringer på form & Eva Stensland, Are Edvarsen \\
     1.0 & 18. juni 2013 & For bruk i årsrapporter for 2012 & Are Edvardsen \\
      & & & \\
-    1.1 & 4. april 2014 & Endringer ift revidert stadieinndeling. Reversering
+    1.1 & 3. april 2014 & Endringer ift revidert stadieinndeling. Reversering
     av tidligere endringer: flytte Resultater frem og ta tilbake
     tabularisk sammendrag for hjelp til vurdering av stadium & Are Edvardsen,
+    Eva Stensland \\
+    1.2 & 4. april 2014 & Tabularisk sammendrag erstattet med stadiumvurdering
+    i egen Del med referanser til øvrige deler av dokumentet & Are Edvardsen,
     Eva Stensland \\
     \hline
   \end{tabular}
@@ -141,14 +147,14 @@ for kvalitetsregistre, og en resultatdel.
 
 For å kunne gi en samlet oversikt over nasjonale kvalitetsregistres
 årsrapporter ber vi om at kopi av rapporten også sendes SKDE innen fristen
-15. oktober 2013. \href{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}{Ekspertgruppen}\footnote{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}
-vil i november 2013 gjøre en gjennomgang av alle årsrapportene for 2012, og
-kategorisere de nasjonale kvalitetsregistrene i henhold til
-stadieinndelingssystemet.
+15. oktober. \href{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}{Ekspertgruppen}\footnote{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}
+vil i november måned gjøre en gjennomgang av alle årsrapportene for inneværende
+årsrapportperiode, og kategorisere de nasjonale kvalitetsregistrene i henhold
+til stadieinndelingssystemet.
 
-Det vil bli gjort en evaluering og eventuelt revisjon av årsrapportmalen etter
-første gangs bruk høsten 2013, og innspill fra kvalitetsregistrene på
-erfaringer med innhold og funksjonalitet er derfor ønskelig.
+Det vil bli gjort en årlig evaluering og eventuelt revisjon av årsrapportmalen,
+og innspill fra kvalitetsregistrene på erfaringer med innhold og funksjonalitet
+er derfor ønskelig.
 
 
 \section*{Veiledning til utfylling}
@@ -190,62 +196,6 @@ servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158
  \def \fyll {På den ene siden går det stadig oppover, men på den andre går 	 
  det lukt åt skogen. Ellers er det mest på det jevne og litt rundtomkring\ldots} 	 
   	 
- \begin{longtable}{lp{5cm}p{8cm}} 	 
- \caption[Sammendrag av status for \registernavn] 	 
- {Sammendrag av status for \registernavn. Detaljert beskrivelse finnes i hvert 	 
- enkelt av kapitlene som tabellen viser til.} \\ 	 
-   \hline 	 
-   Kap. & Kategori & Sammendrag av status \\ 	 
-   \hline 	 
-   \endfirsthead 	 
-   \caption[]{forts.}\\ 	 
-   \hline 	 
-   Kap.  & Kategori & Sammendrag av status \\ 	 
-   \hline 	 
-   \endhead
-   \\
-   \multicolumn{3}{c}{\textit{Tabellen fortsetter på neste side}} \\
-   \hline
-   \endfoot 	 
-   \hline 	 
-   \endlastfoot 	 
-   & \multicolumn{2}{l}{\textbf{\nameref{cha:reg}}} \\ 	 
-   \ref{sec:bak} & \nameref{sec:bak} & \fyll \\ 	 
-   \ref{sec:for} & \nameref{sec:for} & \fyll\\ 	 
-   \ref{cha:led} & \nameref{cha:led} & \fyll\\ 	 
-   \ref{cha:jur} & \nameref{cha:jur} & \fyll\\[8pt] 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:dek}}} \\ 	 
-   \ref{sec:reg} & \nameref{sec:reg} & \fyll \\ 	 
-   \ref{sec:met} & \nameref{sec:met} & \fyll \\ 	 
-   \ref{sec:endek} & \nameref{sec:endek} & \fyll \\ 	 
-   \ref{sec:obs} & \nameref{sec:obs} & \fyll \\ 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:kva}}} \\ 	 
-   \ref{sec:sik} & \nameref{sec:sik} & \fyll \\ 	 
-   \ref{sec:metval} & \nameref{sec:metval} & \fyll \\ 	 
-   \ref{sec:valdat} & \nameref{sec:valdat} & \fyll \\[8pt] 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:dat}}} \\ 	 
-   \ref{sec:metfan} & \nameref{sec:metfan} & \fyll \\ 	 
-   \ref{sec:resfag} & \nameref{sec:resfag} & \fyll \\ 	 
-   \ref{sec:resled} & \nameref{sec:resled} & \fyll \\ 	 
-   \ref{sec:respas} & \nameref{sec:respas} & \fyll \\ 	 
-   \ref{sec:off} & \nameref{sec:off} & \fyll \\[8pt] 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:fag}}} \\ 	 
-   \ref{sec:regspe} & \nameref{sec:regspe} & \fyll \\ 	 
-   \ref{sec:retut} & \nameref{sec:retut} & \fyll \\ 	 
-   \ref{sec:retbru} & \nameref{sec:retbru} & \fyll \\ 	 
-   \ref{sec:brures} & \nameref{sec:brures} & \fyll \\ 	 
-   \ref{sec:evakva} & \nameref{sec:evakva} & \fyll \\ 	 
-   \ref{sec:kom} & \nameref{sec:kom} & \fyll \\[8pt] 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:for}}} \\     	 
-   \ref{sec:samfag} & \nameref{sec:samfag} & \fyll \\ 	 
-   \ref{sec:vitarb} & \nameref{sec:vitarb} & \fyll \\[8pt] 	 
-    & \multicolumn{2}{l}{\textbf{\nameref{cha:pas}}} \\ 	 
-   \ref{sec:pasutk} & \nameref{sec:pasutk} & \fyll \\ 	 
-   \ref{sec:demuli} & \nameref{sec:demuli} & \fyll \\
-   \ref{sec:sosuli} & \nameref{sec:sosuli} & \fyll \\ 	 
-\label{tab:sta} 	 
-\end{longtable}
-
 
 \twocolumn
 
@@ -433,7 +383,8 @@ etnisitet).}
 
 
 \onecolumn
-\part{Plan for forbedringstiltak}
+
+\part{Plan for forbedringstiltak}\label{par:for}
 \chapter{Momentliste}
 \guide{Basert på beskrevet status og evaluering av registeret, beskriv de
 tiltak som er planlagt gjennomført fra og med neste rapporteringsperiode.
@@ -442,29 +393,29 @@ inngå i en slik beskrivelse. For ytterligere forklaring av de ulike punktene,
 se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
 
 \begin{itemize}
-	\item Datafangst
-	\begin{itemize}
-		\item Forbedring av metoder for fangst av data
-	\end{itemize}
-	  \item Datakvalitet
-	    \begin{itemize}
-	      \item Endringer av rutiner for intern kvalitetssikring av data
-	      \item Oppfølging av resultater fra validering mot eksterne kilder
-	    \end{itemize}
-	
+  \item Datafangst
+    \begin{itemize}
+      \item Forbedring av metoder for fangst av data
+    \end{itemize}
+  \item Datakvalitet
+    \begin{itemize}
+      \item Endringer av rutiner for intern kvalitetssikring av data
+      \item Oppfølging av resultater fra validering mot eksterne kilder
+    \end{itemize}
+
   \item Dekningsgrad
     \begin{itemize}
       \item Nye registrerende enheter/avdelinger
       \item Forbedring av dekningsgrad på individnivå i registeret
     \end{itemize}
-      \item Fagutvikling og kvalitetsforbedring av tjenesten
-        \begin{itemize}
-          \item Nye kvalitetsmål
-          \item Bidrag til etablering av nasjonale retningslinjer
-          \item Registrerende enheters etterlevelse av nasjonale retningslinjer
-          \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt institusjon
-          \item Prioriterte, faglige forbedringsområder
-        \end{itemize}
+  \item Fagutvikling og kvalitetsforbedring av tjenesten
+    \begin{itemize}
+      \item Nye kvalitetsmål
+      \item Bidrag til etablering av nasjonale retningslinjer
+      \item Registrerende enheters etterlevelse av nasjonale retningslinjer
+      \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt institusjon
+      \item Prioriterte, faglige forbedringsområder
+    \end{itemize}
   \item Formidling av resultater
     \begin{itemize}
       \item Forbedring av resultatformidling til deltagende fagmiljø
@@ -493,6 +444,86 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
 
 %\listoffigures
 %%\listoftables
+
+
+
+\part{Stadiumvurdering}
+\chapter{Referanser til vurdering av stadium}
+\guide{Oversikt over vurderingspunkter som legges til grunn for
+stadiuminndeling av registeret med referansert til relevant informasjon
+gitt i årsrapporten. Denne delen skal ikke fylles ut, men er ment som en
+hjelp til registeret og ekspertgruppen i vurdering av registerts
+``modenhet''.}
+
+\begin{longtable}{rp{10cm}lc}
+  \caption[Vurderingspunkter for stadium \registernavn]
+  {Vurderingspunkter for stadium \registernavn} \\
+  \hline 	 
+  Nr & Beskrivelse & Referanse & Ok \\ 	 
+  \hline 	 
+  \endfirsthead 	 
+  \caption[]{forts.}\\ 	 
+  \hline 	 
+  Nr & Beskrivelse & Referanse & Ok \\
+  \hline 	 
+  \endhead
+  \\
+  \multicolumn{4}{c}{\textit{Tabellen fortsetter på neste side}} \\
+  \hline
+  \endfoot 	 
+  \hline 	 
+  \endlastfoot 	 	 
+   & \textbf{Stadium 2} & & \\
+  1 & Er i drift og samler data nasjonalt & \ref{cha:res} & \Square \\
+  2 & Presenterer resultater på nasjonalt nivå & \ref{cha:res} & \Square\\
+  3 & Har en konkret plan for gjennomføring av dekningsgradsanalyser
+    & \ref{sec:met} & \Square\\
+  4 & Har en konkret plan for gjennomføring av analyser og løpende
+      rapportering av resultater på sykehusnivå tilbake til deltakende
+      enheter & \ref{sec:resfag} & \Square\\
+      5 & Har en oppdatert plan for videre utvikling
+      & \ref{cha:res}, Del \ref{par:for} & \Square\\
+   & & & \\
+
+   & \textbf{Stadium 3} & & \\
+  6 & Kan redegjøre for registerets datakvalitet
+    & \ref{sec:sik}, \ref{sec:metval}, \ref{sec:valdat} & \Square\\
+  7 & Har beregnet dekningsgrad mot uavhengig ekstern datakilde
+    & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square\\
+  8 & Registrerende enheter har tilgang til egne og nasjonale resultater
+    & \ref{sec:resfag} & \Square\\
+  9 & Presenterer deltakende enheters etterlevelse av nasjonale retningslinjer
+  & \ref{sec:retbru} & \Square\\
+  10 & Har identifisert kliniske forbedringsområder basert på analyser fra
+  registeret & \ref{sec:brures} & \Square\\
+  11 & Brukes til klinisk kvalitetsforbedringsarbeid
+    & \ref{sec:brures}, \ref{sec:evakva} & \Square\\
+  12 & Resultater anvendes vitenskapelig & \ref{sec:vitarb} & \Square\\
+  13 & Presenterer resultater for PROM og PREM & \ref{sec:pasutk} & \Square\\
+  14 & Har en oppdatert plan for videre utvikling
+    & \ref{cha:res}, Del \ref{par:for} & \Square\\
+   & & & \\
+
+   & \textbf{Stadium 4} & & \\
+  15 & Kan dokumentere registerets datakvalitet gjennom en valideringsstudie
+    & \ref{sec:valdat} & \Square\\
+  16 & Presenterer oppdatert dekningsgradsanalyse hvert 2. år
+  & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square\\
+  17 & Har dekningsgrad over 80\% & \ref{sec:obs} & \Square\\
+  18 & Registrerende enheter har løpende tilgang til oppdaterte egne og
+  nasjonale resultater & \ref{sec:resfag}, \ref{sec:off} & \Square\\
+  19 & Bidrar til utvikling av nasjonale retningslinjer & \ref{sec:retut}
+    & \Square\\
+  20 & Presentere resultater på sosial ulikhet i helse & \ref{sec:sosuli}
+    & \Square\\
+  21 & Resultater fra registeret er tilpasset og tilgjengelig for pasienter
+    & \ref{sec:respas} & \Square\\
+  22 & Viser at registeret har ført til kvalitetsforbedring/endret klinisk
+  praksis & \ref{sec:evakva} & \Square\\
+  \label{tab:sta} 	 
+\end{longtable}
+
+
 
 
 \end{document}
