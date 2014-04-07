@@ -19,8 +19,8 @@
 \def \registernavn {\textit{Navn på register}}
 
 %% tittelting
-\title{\registernavn \\ \textbf{Årsrapport \textit{[årstall]}\\
-Plan for forbedringstiltak \textit{[årstall+1]}}}
+\title{\registernavn \\ \textbf{Årsrapport for \textit{[årstall]} med \\
+plan for forbedringstiltak}}
 
 \author[1]{Ola Normann}
 \author[2]{Medel Svensson}
@@ -40,7 +40,8 @@ Plan for forbedringstiltak \textit{[årstall+1]}}}
 %% ---
 
 % overstyre mulige ord-deling-er
-\hyphenation{stadium-vurder-ing system-atiske pasi-ent-rap-porterte}
+\hyphenation{stadium-vurder-ing system-atiske pasi-ent-rap-porterte
+retnings-linjer}
 
 
 \begin{document}
@@ -116,6 +117,9 @@ som er fritt tilgjengelig og gratis i bruk.
     1.2 & 4. april 2014 & Tabularisk sammendrag erstattet med stadiumvurdering
     i egen Del med referanser til øvrige deler av dokumentet & Are Edvardsen,
     Eva Stensland \\
+    1.3 & 7. april 2014 & Gjennomgang og justering hvert pkt under
+    stadieinndelingen. Små endringer i dokumentet forøvrig &
+    Eva Stensland, Philip Skau, Gøril Nordgård, Are Edvardsen \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
@@ -133,33 +137,28 @@ fremst for å vise hvilken nytte registeret har hatt for helsetjenesten, og
 hvordan registeret kan brukes til forbedring. Årsrapporten bør utformes slik
 at den også kan leses og forstås av personer utenfor det aktuelle fagmiljø.
 
-Alle nasjonale medisinske kvalitetsregistre skal sende inn årsrapport til adm.
-dir. ved driftsansvarlig RHF innen 15. oktober påfølgende år. Fra og med 2012
-er dette et krav for tildeling av ressurser.
-
 Denne malen for årsrapport er utarbeidet av Nasjonalt servicemiljø for
-kvalitetsregistre på bestilling av interregional styringsgruppe, og ble
-godkjent på møtet i interregional styringsgruppe 12. juni 2013 for bruk av alle
+kvalitetsregistre på bestilling av interregional styringsgruppe, for bruk av alle
 nasjonale medisinske kvalitetsregistre. Malen inneholder sentrale
 rapporteringselementer som blant annet har sitt utgangspunkt i
 \href{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Stadieinndelingsmodell.pdf}{stadieinndelingssystemet}\footnote{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Stadieinndelingsmodell.pdf}
 for kvalitetsregistre, og en resultatdel.
 
-For å kunne gi en samlet oversikt over nasjonale kvalitetsregistres
-årsrapporter ber vi om at kopi av rapporten også sendes SKDE innen fristen
-15. oktober. \href{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}{Ekspertgruppen}\footnote{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}
-vil i november måned gjøre en gjennomgang av alle årsrapportene for inneværende
+Mottaker for årsrapporten er det enkelte registers RHF. For å kunne gi en
+samlet oversikt over nasjonale kvalitetsregistres
+årsrapporter, samt å være grunnlag for offentliggjøring av resultater fra
+kvalitetsregistrene, ber vi om at kopi av rapporten også sendes SKDE innen
+innleveringsfristen.
+\href{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}{Ekspertgruppen}\footnote{http://www.kvalitetsregistre.no/aktuelt/ekspertgruppens-foerste-moete-article739-157.html}
+vil gjøre en gjennomgang av alle årsrapportene for inneværende
 årsrapportperiode, og kategorisere de nasjonale kvalitetsregistrene i henhold
 til stadieinndelingssystemet.
 
-Det vil bli gjort en årlig evaluering og eventuelt revisjon av årsrapportmalen,
-og innspill fra kvalitetsregistrene på erfaringer med innhold og funksjonalitet
-er derfor ønskelig.
 
 
 \section*{Veiledning til utfylling}
 
-Kapittel \ref{cha:reg}-\ref{cha:pas} i malen er beskrivende, og utfylles så
+Kapittel \ref{cha:metoder}-\ref{cha:pas} i malen er beskrivende, og utfylles så
 langt det er mulig. Det vil
 være mange registre som mangler informasjon for utfylling av ett eller flere
 underkapitler. Ved manglende informasjon, fjerner man det aktuelle
@@ -174,7 +173,7 @@ Kapittel \ref{cha:res} er resultatdelen av årsrapporten, og her fyller det
 enkelte
 register inn de resultater (tabeller, figurer og tekst) de ønsker å formidle.
 Det er et ønske om at man viser resultater fra de viktigste kvalitetsmål i
-registeret, og at resultatene formidles på sykehus eller foretaksnivå dersom
+registeret, og at resultatene formidles på sykehusnivå dersom
 mulig.
 
 I hver helseregion finnes det en representant for det nasjonale servicemiljøet
@@ -188,18 +187,10 @@ servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158
 \tableofcontents
 \part{Årsrapport}\label{par:rap}
 
-\chapter{Sammendrag}
-\guide{Kortfattet sammendrag av de viktigste elementer man fra registerets side ønsker å formidle i årsrapporten.}
-
-\section{Tabularisk oppsummering}
-% for å se hvordan dette kan ta seg ut i tabellform, lag en fylltekst 	 
- \def \fyll {På den ene siden går det stadig oppover, men på den andre går 	 
- det lukt åt skogen. Ellers er det mest på det jevne og litt rundtomkring\ldots} 	 
-  	 
-
 \twocolumn
 
-
+\chapter{Sammendrag}
+\guide{Kortfattet sammendrag av de viktigste elementer man fra registerets side ønsker å formidle i årsrapporten.}
 
 
 \chapter{Registerbeskrivelse}\label{cha:reg}
@@ -218,7 +209,16 @@ servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158
 \guide{Antall møter, viktige saker som er behandlet mv.}
 
 
-\chapter{Metoder for fangst av data}
+
+\chapter{Resultater (tradisjonell årsrapport / -statistikk)}\label{cha:res}
+\guide{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet. Dette er ``Årsrapporten'' i tradisjonell forstand.}
+
+
+
+
+
+
+\chapter{Metoder for fangst av data}\label{cha:metoder}
 \guide{Beskriv hva/hvem som registrerer (eksempelvis sykehusenes egne
 fagsystemer, helsearbeidere, pasienter) og hvordan innsamlingen skjer
 (eksempelvis elektronisk eller på papirskjema).}
@@ -240,9 +240,9 @@ dette er sammenholdt med registerets data (design/subsampling).}
 
 \section{Vurdering av datakvalitet}\label{sec:valdat}
 \guide{Angi viktige funn og en vurdering av resultatene fra
-valideringsstudien slik som funn av systematiske feil, tilfeldige feil og
-antatt effekt dette har på validitet for hele registeret.}
-
+valideringsanalyser slik som funn av systematiske feil, tilfeldige feil og
+antatt effekt dette har på validitet for hele registeret. Angi graden av
+kompletthet for hver enkelt variabel.}
 
 
 
@@ -277,6 +277,9 @@ eventuelt også endringer fra tidligere år.}
 
 
 
+
+
+
 \chapter{Fagutvikling og kvalitetsforbedring av tjenesten}\label{cha:fag}
 \guide{Beskrivelse av registerets fagutvikling og kvalitetsforbedringstiltak
 i rapporteringsperioden.}
@@ -297,10 +300,13 @@ kvalitetsindikatorer, tas dette med.}
 \guide{I den grad det er relevant, beskriv hvordan registeret bidrar til
 etablering av nasjonale retningslinjer, handlingsplaner/-program}
 
-\section{Bruk av nasjonale retningslinjer}\label{sec:retbru}
+\section{Etterlevelse av nasjonale retningslinjer}\label{sec:retbru}
 \guide{I den grad de eksisterer, beskriv i hvor stor grad deltagende enheter
 etterlever etablerte nasjonale retningslinjer.}
 
+\section{Identifisering av kliniske forbedringsområder}\label{sec:ide}
+\guide{Beskriv kliniske forbedringsområder som er identifisert på bakgrunn
+av analyser fra registeret.}
 
 \section{Kvalitetsforbedrende tiltak initiert av registeret}\label{sec:brures}
 \guide{Angi konkrete prosjekter
@@ -312,7 +318,7 @@ av kvalitetsforbedringsarbeid lokalt hos innregistrerende institusjoner.}
 \guide{Beskriv resultater av gjennomførte tiltak for kvalitetsforbedringer
 i kap. \ref{sec:brures}.}
 
-\section{Komplikasjoner og uønskede hendelser}\label{sec:kom}
+\section{Pasientsikkerhet}\label{sec:kom}
 \guide{Beskriv hva som registreres av komplikasjoner og/eller uønskede
 hendelser i forbindelse med den behandling som registeret omfatter.}
 
@@ -325,7 +331,7 @@ av resultater fra registeret. Resultater i seg selv beskrives i kap.
 \ref{cha:res}.}
 
 
-\section{Resultater tilbake til deltagende fagmiljø}\label{sec:resfag}
+\section{Resultater tilbake til deltakende fagmiljø}\label{sec:resfag}
 \guide{Beskriv form og frekvens,  eventuelt tilbakemeldinger på relevans,
 endringsønsker mm.}
 
@@ -334,8 +340,9 @@ endringsønsker mm.}
 informasjonen formidles til ledelse og administrasjon.}
 
 \section{Resultater til pasienter}\label{sec:respas}
-\guide{Beskriv form og frekvens og eventuelt tilbakemeldinger fra pasienter,
-særlig i forhold til nytten av informasjonen fra registeret.}
+\guide{Beskriv form og frekvens av tilpasset informasjon og eventuelt
+tilbakemeldinger fra pasienter, særlig i forhold til nytten av informasjonen
+fra registeret.}
 
 \section{Offentliggjøring av resultater på institusjonsnivå}\label{sec:off}
 \guide{Beskriv hvor/til hvem, form og frekvens. Resultater i seg selv beskrives i kap. \ref{cha:res}.}
@@ -364,30 +371,22 @@ resultater samt
 hvordan resultater fra registeret varierer med demografiske og sosiale forhold
 i pasientpopulasjonen.}
 
-\section{Pasientrapporterte resultatmål}\label{sec:pasutk}
+\section{Pasientrapporterte resultat- og erfaringsmål (PROM og PREM)}\label{sec:pasutk}
 \guide{Beskriv hvilke instrumenter som benyttes.}
 
-\section{Demografiske ulikheter}\label{sec:demuli}
-\guide{Angi hvilke variabler som er tilgjengelig i registeret (alder, kjønn,
-bosted).}
 
-\section{Sosiale ulikheter}\label{sec:sosuli}
-\guide{Beskriv hvilke målinger som benyttes (sivilstatus, utdanning, inntekt,
-etnisitet).}
-
-
-\chapter{Resultater (tradisjonell årsrapport/-statistikk)}\label{cha:res}
-\guide{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet. Dette er ``Årsrapporten'' i tradisjonell forstand.}
-
-
+\section{Sosiale og demografiske ulikheter i helse}\label{sec:sosdem}
+\guide{Angi hvilke analyser som er utført og resultater av disse.}
 
 
 \onecolumn
 
+
+
 \part{Plan for forbedringstiltak}\label{par:for}
 \chapter{Momentliste}
 \guide{Basert på beskrevet status og evaluering av registeret, beskriv de
-tiltak som er planlagt gjennomført fra og med neste rapporteringsperiode.
+tiltak som er gjennomført inneværende år samt tiltak som er planlagt gjennomført  for neste kalenderår.
 Punktlisten under kan brukes som et utgangspunkt og hjelp til hva som kan
 inngå i en slik beskrivelse. For ytterligere forklaring av de ulike punktene,
 se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
@@ -447,7 +446,7 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
 
 
 
-\part{Stadiumvurdering}
+\part{Stadievurdering}
 \chapter{Referanser til vurdering av stadium}
 \guide{Oversikt over vurderingspunkter som legges til grunn for
 stadiuminndeling av registeret med referansert til relevant informasjon
@@ -459,12 +458,12 @@ hjelp til registeret og ekspertgruppen i vurdering av registerts
   \caption[Vurderingspunkter for stadium \registernavn]
   {Vurderingspunkter for stadium \registernavn} \\
   \hline 	 
-  Nr & Beskrivelse & Referanse & Ok \\ 	 
+  Nr & Beskrivelse & Kapittel & Ok \\ 	 
   \hline 	 
   \endfirsthead 	 
   \caption[]{forts.}\\ 	 
   \hline 	 
-  Nr & Beskrivelse & Referanse & Ok \\
+  Nr & Beskrivelse & Kapittel & Ok \\
   \hline 	 
   \endhead
   \\
@@ -481,8 +480,8 @@ hjelp til registeret og ekspertgruppen i vurdering av registerts
   4 & Har en konkret plan for gjennomføring av analyser og løpende
       rapportering av resultater på sykehusnivå tilbake til deltakende
       enheter & \ref{sec:resfag} & \Square\\
-      5 & Har en oppdatert plan for videre utvikling
-      & \ref{cha:res}, Del \ref{par:for} & \Square\\
+      5 & Har en oppdatert plan for videre utvikling av registeret
+      & Del \ref{par:for} & \Square\\
    & & & \\
 
    & \textbf{Stadium 3} & & \\
@@ -495,30 +494,28 @@ hjelp til registeret og ekspertgruppen i vurdering av registerts
   9 & Presenterer deltakende enheters etterlevelse av nasjonale retningslinjer
   & \ref{sec:retbru} & \Square\\
   10 & Har identifisert kliniske forbedringsområder basert på analyser fra
-  registeret & \ref{sec:brures} & \Square\\
+  registeret & \ref{sec:ide} & \Square\\
   11 & Brukes til klinisk kvalitetsforbedringsarbeid
     & \ref{sec:brures}, \ref{sec:evakva} & \Square\\
   12 & Resultater anvendes vitenskapelig & \ref{sec:vitarb} & \Square\\
   13 & Presenterer resultater for PROM og PREM & \ref{sec:pasutk} & \Square\\
-  14 & Har en oppdatert plan for videre utvikling
-    & \ref{cha:res}, Del \ref{par:for} & \Square\\
+  14 & Har en oppdatert plan for videre utvikling av registeret
+    & Del \ref{par:for} & \Square\\
    & & & \\
 
    & \textbf{Stadium 4} & & \\
-  15 & Kan dokumentere registerets datakvalitet gjennom en valideringsstudie
+  15 & Kan dokumentere registerets datakvalitet gjennom valideringsanalyser
     & \ref{sec:valdat} & \Square\\
   16 & Presenterer oppdatert dekningsgradsanalyse hvert 2. år
   & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square\\
   17 & Har dekningsgrad over 80\% & \ref{sec:obs} & \Square\\
   18 & Registrerende enheter har løpende tilgang til oppdaterte egne og
   nasjonale resultater & \ref{sec:resfag}, \ref{sec:off} & \Square\\
-  19 & Bidrar til utvikling av nasjonale retningslinjer & \ref{sec:retut}
+  19 & Presentere resultater på sosial ulikhet i helse & \ref{sec:sosdem}
     & \Square\\
-  20 & Presentere resultater på sosial ulikhet i helse & \ref{sec:sosuli}
-    & \Square\\
-  21 & Resultater fra registeret er tilpasset og tilgjengelig for pasienter
+  20 & Resultater fra registeret er tilpasset og tilgjengelig for pasienter
     & \ref{sec:respas} & \Square\\
-  22 & Viser at registeret har ført til kvalitetsforbedring/endret klinisk
+  21 & Kunne dokumentere at registeret har ført til kvalitetsforbedring/endret klinisk
   praksis & \ref{sec:evakva} & \Square\\
   \label{tab:sta} 	 
 \end{longtable}
