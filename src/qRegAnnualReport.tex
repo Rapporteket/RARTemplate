@@ -60,7 +60,7 @@ retnings-linjer hjemmelsgrunnlag}
 % Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
 % Tas inn igjen ved å fjerne løkka rundt
 
-%\iffalse
+\iffalse
 
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
@@ -125,6 +125,8 @@ som er fritt tilgjengelig og gratis i bruk.
     Philip Skau, Are Edvardsen \\
     1.5 & 9. mai 2014 & Større endringer etter behandling i ekspertgruppa
     29. og 30. april 2014 & Eva Stensland, Are Edvardsen \\
+    1.6 & 15. mai 2014 & Mindre språklige endringer og oppdatering av
+    momentliste ihht ny struktur & Eva Stensland, Are Edvardsen \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
@@ -132,7 +134,7 @@ som er fritt tilgjengelig og gratis i bruk.
   \label{tab:log}
 \end{table}
 
-%\fi
+\fi
 
 \chapter*{Bakgrunn og veiledning til utfylling}
 
@@ -195,16 +197,20 @@ servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158
 
 \twocolumn
 
+
+
+
 \chapter{Sammendrag}
 \guide{Kortfattet sammendrag av de viktigste elementer man fra registerets side
 ønsker å formidle i årsrapporten. De viktigste resultater for
 behandlingskvalitet og kvalitetsforbedringstiltak bør angis.}
 
 
+
+
 \chapter{Registerbeskrivelse}\label{cha:reg}
 \guide{Informasjon til dette kapitlet hentes fra egen registerbeskrivelse,
-føknad om nasjonal status, konsesjonssøknad etc.}
-
+søknad om nasjonal status, konsesjonssøknad etc.}
 
 \section{Bakgrunn og formål}
 \subsection{Bakgrunn for registeret}\label{sec:bak}
@@ -213,16 +219,14 @@ føknad om nasjonal status, konsesjonssøknad etc.}
 \section{Juridisk hjemmelsgrunnlag}\label{cha:jur}
 
 \section{Faglig ledelse og databehandlingsansvar}\label{cha:led}
-
 \subsection{Aktivitet i \\ styringsgruppe/referansegruppe}
 \guide{Antall møter, viktige saker som er behandlet mv.}
 
 
 
+
 \chapter{Resultater}\label{cha:res}
-\guide{Fyll inn resultater. Relativt uavhengig ift resten av dokumentet.}
-
-
+\guide{Tekst, tabeller og figurer der resultater fra registeret presenteres.}
 
 
 
@@ -252,17 +256,17 @@ individer i det aktuelle året.}
 \guide{Per 31. desember for rapporteringsåret, angi antall
 individer/hendelser totalt og per institusjon. Kan også brytes opp i antall per år.}
 
+\section{Metode for beregning av dekningsgrad}\label{sec:met}
+\guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
+gjelder for og hvordan analysene er gjort (metode).}
+
 \section{Dekningsgrad på institusjonsnivå}\label{sec:endek}
-\guide{Angi resultatet av dekningsgradsanalysen på institusjonsnivå
+\guide{Angi resultatet av dekningsgradsanalyse på institusjonsnivå
 (eksempelvis sykehus eller helseforetak),
 eventuelt også endringer fra tidligere år.}
 
 \section{Dekningsgrad på individnivå}\label{sec:obs}
 \guide{Angi resultat av dekningsgradsanalyse på individnivå.}
-
-\section{Metode for beregning av dekningsgrad}\label{sec:met}
-\guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
-gjelder for og hvordan analysene er gjort (metode).}
 
 \section{Metoder for intern sikring av datakvalitet}\label{sec:sik}
 \guide{Beskriv infrastruktur og rutiner (eksempelvis
@@ -277,8 +281,7 @@ dette er sammenholdt med registerets data (design/subsampling).}
 \guide{Angi viktige funn og en vurdering av resultatene fra
 valideringsanalyser slik som funn av systematiske feil, tilfeldige feil og
 antatt effekt dette har på validitet for hele registeret. Angi graden av
-kompletthet for sntrale variabler.}
-
+kompletthet for sentrale variabler.}
 
 
 
@@ -297,18 +300,12 @@ for ytterligere beskrivelse. I den grad registeret registrerer nasjonale
 kvalitetsindikatorer, tas dette med.}
 
 \section{Pasientrapporterte resultat- og erfaringsmål (PROM og PREM)}\label{sec:pasutk}
-\guide{Beskriv hvilke instrumenter som benyttes.}
-
+\guide{Beskriv hvilke instrumenter som benyttes. Resultater i seg selv
+beskrives i kap. \ref{cha:res}.}
 
 \section{Sosiale og demografiske ulikheter i helse}\label{sec:sosdem}
-\guide{Angi hvilke analyser som er utført og resultater av disse.}
-
-
-
-
-
-
-
+\guide{Angi hvilke analyser som er utført. Resultater i seg selv beskrives
+i kap. \ref{cha:res}.}
 
 \section{Bidrag til utvikling av nasjonale retningslinjer o.l.}\label{sec:retut}
 \guide{I den grad det er relevant, beskriv hvordan registeret bidrar til
@@ -345,7 +342,6 @@ hendelser i forbindelse med den behandling som registeret omfatter.}
 av resultater fra registeret. Resultater i seg selv beskrives i kap.
 \ref{cha:res}.}
 
-
 \section{Resultater tilbake til deltakende fagmiljø}\label{sec:resfag}
 \guide{Beskriv form og frekvens,  eventuelt tilbakemeldinger på relevans,
 endringsønsker mm.}
@@ -365,8 +361,6 @@ fra registeret.}
 
 
 
-
-
 \chapter{Samarbeid og forskning}\label{cha:for}
 \guide{Status og evaluering av samarbeid med andre registre/fagmiljø og  vitenskapelig aktivitet.}
 
@@ -380,10 +374,12 @@ lignende.}
 
 
 
+
 \onecolumn
 
 
 \part{Plan for forbedringstiltak}\label{par:for}
+
 \chapter{Momentliste}
 \guide{Basert på beskrevet status og evaluering av registeret, beskriv de
 tiltak som er gjennomført inneværende år samt tiltak som er planlagt gjennomført  for neste kalenderår.
@@ -396,23 +392,26 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
     \begin{itemize}
       \item Forbedring av metoder for fangst av data
     \end{itemize}
-  \item Datakvalitet
-    \begin{itemize}
-      \item Endringer av rutiner for intern kvalitetssikring av data
-      \item Oppfølging av resultater fra validering mot eksterne kilder
-    \end{itemize}
-
-  \item Dekningsgrad
+  \item Metodisk kvalitet
     \begin{itemize}
       \item Nye registrerende enheter/avdelinger
       \item Forbedring av dekningsgrad på individnivå i registeret
+      \item Endringer av rutiner for intern kvalitetssikring av data
+      \item Oppfølging av resultater fra validering mot eksterne kilder
     \end{itemize}
   \item Fagutvikling og kvalitetsforbedring av tjenesten
     \begin{itemize}
       \item Nye kvalitetsmål
+      \item Nye pasientrapporterte resultater som skal inn i registeret
+      \item Utvidet bruk av pasientrapporterte resultater
+      \item Nye demografiske variabler som skal inn i registeret
+      \item Utvidet bruk av demografiske variabler
+      \item Nye variabler som beskriver sosiale forhold hos pasientene
+      \item Utvidet bruk av resultater som beskriver sosiale ulikheter
       \item Bidrag til etablering av nasjonale retningslinjer
       \item Registrerende enheters etterlevelse av nasjonale retningslinjer
-      \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt institusjon
+      \item Økt bruk av resultater til kvalitetsforbedring i hver enkelt
+        institusjon
       \item Prioriterte, faglige forbedringsområder
     \end{itemize}
   \item Formidling av resultater
@@ -422,31 +421,19 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
       \item Forbedring av resultatformidling til pasienter
       \item Forbedring av hvordan resultater på institusjonsnivå offentliggjøres
     \end{itemize}
-
   \item Samarbeid og forskning
     \begin{itemize}
       \item Nye samarbeidspartnere
       \item Forskningsprosjekter og annen vitenskapelig aktivitet
     \end{itemize}
-  \item Pasientrapportering, demografi og sosiale forhold
-    \begin{itemize}
-      \item Nye pasientrapporterte resultater som skal inn i registeret
-      \item Utvidet bruk av pasientrapporterte resultater
-      \item Nye demografiske variabler som skal inn i registeret
-      \item Utvidet bruk av demografiske variabler
-      \item Nye variabler som beskriver sosiale forhold hos pasientene
-      \item Utvidet bruk av resultater som beskriver sosiale ulikheter
-    \end{itemize}
 \end{itemize}
 
 
 
-%\listoffigures
-%%\listoftables
-
-
 
 \part{Stadievurdering}
+
+
 \chapter{Referanser til vurdering av stadium}
 \guide{Oversikt over vurderingspunkter som legges til grunn for
 stadieinndeling av registre med referanser til relevant informasjon
@@ -523,6 +510,11 @@ hjelp til registeret og ekspertgruppen i vurdering av registeret.}
 \end{longtable}
 
 
+
+
+
+%\listoffigures
+%\listoftables
 
 
 \end{document}
