@@ -1,3 +1,37 @@
+%%% Årsrapportmal for nasjonale medisinske kvalitetsregistre.               %%%
+%                                                                             %
+%   For utfyllende informasjon om dokumentet, se 'Om årsrapportmalen'.        %
+%   SKDE vedlikeholder LaTeX-koden som er under versjonskontroll i            %
+%   kodebrønn (Subversion) hos Helse Nord IKT.                                %
+%                                                                             %
+%%% SKDE, Are Edvardsen 2013, 2014                                          %%%
+
+
+% Note on msword, copied from local file 'convert_to_msword_howto.txt':
+%
+% Unfortunately, the template also needs to be distributed i ms word format.
+% This is a pain: looks ugly and less usefull. However, here is the recipe:
+
+% # compile latex source
+% latex qRegAnnualReport.tex
+
+% # make html from latex source
+% htlatex qRegAnnualReport.tex
+
+% # Next steps in libreoffice
+% -open qRegAnnualReport.html
+% -export as openoffice (odt)
+% -open new odt-file
+% -remove comments
+% -set page size to A4
+% -fix superscript on front page
+% -remove footnote references that points to local html-file
+% -adjust table
+% -add page breaks
+% -save as doc/docx
+% -check that all is ok
+
+
 % For print, bruk dokumentklassen 'book'. Bruk 'report' for å unngå blanke
 % sider
 \documentclass[norsk, a4paper, twocolumn]{report}
@@ -12,14 +46,17 @@
 \usepackage{color}
 \usepackage{wasysym}
 
+
 % Ikke bruk innrykk for nye avsnitt, men heller litt større vertikal avatand
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
+
 % Sett registerets navn
 \def \registernavn {\textit{Navn på register}}
 
-%% tittelting
+
+% tittelting
 \title{\registernavn \\ \textbf{Årsrapport for \textit{[årstall]} med \\
 plan for forbedringstiltak}}
 
@@ -33,12 +70,13 @@ plan for forbedringstiltak}}
 \renewcommand\Authfont{\scshape}
 \renewcommand\Affilfont{\itshape\small}
 
+
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
 \newcommand{\guide}[1] {
 	\textit{[\textcolor{guidegray}{#1}]}
 	}
-%% ---
+
 
 % overstyre mulige ord-deling-er
 \hyphenation{stadium-vurder-ing system-atiske pasi-ent-rap-porterte
@@ -47,21 +85,16 @@ retnings-linjer hjemmelsgrunnlag}
 
 \begin{document}
 
-
 \maketitle
 
-
 \onecolumn
-%\frontmatter
-
 
 
 % Ta ut hele kapittelet ved bruk til faktisk rapport.
 % Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
 % Tas inn igjen ved å fjerne løkka rundt
 
-\iffalse
-
+%\iffalse
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
 kvalitetsregistre gjøres på bestilling av den interregionale styringsgruppen
@@ -127,16 +160,21 @@ som er fritt tilgjengelig og gratis i bruk.
     29. og 30. april 2014 & Eva Stensland, Are Edvardsen \\
     1.6 & 15. mai 2014 & Mindre språklige endringer og oppdatering av
     momentliste ihht ny struktur & Eva Stensland, Are Edvardsen \\
+    1.7 & 6. juni 2014 & Lagt inn eksempel på CheckedBox for stadier og info
+    i dokumentkoden, inkludert konvertering til msword & Are Edvardsen \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
   oppføring i denne tabellen.}
   \label{tab:log}
 \end{table}
+%\fi
 
-\fi
+
+
 
 \chapter*{Bakgrunn og veiledning til utfylling}
+
 
 \section*{Bakgrunn}
 En årsrapport fra et medisinsk kvalitetsregister bør utarbeides først og
@@ -164,9 +202,7 @@ vil gjøre en gjennomgang av alle årsrapportene for inneværende
 til stadieinndelingssystemet.
 
 
-
 \section*{Veiledning til utfylling}
-
 Kapittel \ref{cha:metoder}-\ref{cha:for} i malen er beskrivende, og utfylles så
 langt det er mulig. Det vil
 være mange registre som mangler informasjon for utfylling av ett eller flere
@@ -190,13 +226,15 @@ for medisinske kvalitetsregistre som kan svare på spørsmål angående
 servicemiljøets \href{http://www.kvalitetsregistre.no/servicemiljoe/category158.html}{nettsider}\footnote{http://www.kvalitetsregistre.no/servicemiljoe/category158.html}.
 
 
-%\mainmatter
+
 
 \tableofcontents
+
+
+
+
 \part{Årsrapport}\label{par:rap}
-
 \twocolumn
-
 
 
 
@@ -380,6 +418,7 @@ lignende.}
 
 \part{Plan for forbedringstiltak}\label{par:for}
 
+
 \chapter{Momentliste}
 \guide{Basert på beskrevet status og evaluering av registeret, beskriv de
 tiltak som er gjennomført inneværende år samt tiltak som er planlagt gjennomført  for neste kalenderår.
@@ -459,7 +498,8 @@ hjelp til registeret og ekspertgruppen i vurdering av registeret.}
   \hline 	 
   \endlastfoot 	 	 
    & \textbf{Stadium 2} & & \\
-  1 & Er i drift og samler data nasjonalt & \ref{cha:res} & \Square & \Square \\
+  1 & Er i drift og samler data nasjonalt & \ref{cha:res} & \CheckedBox
+    & \Square \\
   2 & Presenterer resultater på nasjonalt nivå & \ref{cha:res} & \Square
     & \Square \\
   3 & Har en konkret plan for gjennomføring av dekningsgradsanalyser
@@ -508,9 +548,6 @@ hjelp til registeret og ekspertgruppen i vurdering av registeret.}
   praksis & \ref{sec:evakva} & \Square& \Square \\
   \label{tab:sta} 	 
 \end{longtable}
-
-
-
 
 
 %\listoffigures
