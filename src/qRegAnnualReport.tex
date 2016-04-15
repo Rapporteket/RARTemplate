@@ -4,7 +4,7 @@
 %   SKDE vedlikeholder LaTeX-koden som er under versjonskontroll i            %
 %   kodebrønn (Subversion) hos Helse Nord IKT.                                %
 %                                                                             %
-%%% SKDE, Are Edvardsen 2013, 2014                                          %%%
+%%% SKDE, Are Edvardsen 2013, 2014, 2015, 2016                              %%%
 
 
 % Note on msword, copied from local file 'convert_to_msword_howto.txt':
@@ -45,6 +45,7 @@
 \usepackage{wasysym}
 \usepackage[raggedright]{titlesec}
 \usepackage{color,hyperref}
+\usepackage{soul}
 
 % Gjør alle lenker mørkeblå
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
@@ -104,7 +105,7 @@ indi-kator-er styrings-gruppe}
 % Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
 % Tas inn igjen ved å fjerne løkka rundt
 
-\iffalse
+%\iffalse
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
 kvalitetsregistre gjøres på bestilling av den interregionale styringsgruppen
@@ -180,13 +181,14 @@ som er fritt tilgjengelig og gratis i bruk.
     2.2 & 7. mai 2015 & Lagt til Summary samt en del justering og tillegg
     til forklaringstekster. Lagt til nytt punkt om "Inklusjonskriterier" i
     kapittel \ref{cha:fag}. & Are Edvardsen \\
+    2.3 & 15. april 2016 & Foreløpige endringer. & Eva Stensland mfl. \\
     \hline
   \end{tabular}
   \caption{Endringslogg for dette dokumentet. Gjeldende versjon er siste
   oppføring i denne tabellen.}
   \label{tab:log}
 \end{table}
-\fi
+%\fi
 
 
 
@@ -280,7 +282,7 @@ søknad om nasjonal status, konsesjonssøknad etc.}
 konsesjon, angi eventuell tidsbegrensning for denne.}
 
 \section{Faglig ledelse og databehandlingsansvar}\label{cha:led}
-\subsection{Aktivitet i\\styringsgruppe/referansegruppe}
+\subsection{Aktivitet i\\fagråd/referansegruppe}
 \guide{Antall møter, viktige saker som er behandlet mv.}
 
 
@@ -335,8 +337,8 @@ opplæring, informasjonsarbeid, tekniske støttesystemer) som ivaretar riktige o
 komplette data.}
 
 \section{Metode for validering av data i registeret}\label{sec:metval}
-\guide{Beskriv hvilke eksterne kilder som er benyttet og hvordan
-dette er sammenholdt med registerets data (design/subsampling).} 
+\guide{Beskriv hvilke eksterne kilder som \hl{skal} \st{er} \hl{benyttes} \st{benyttet} og hvordan
+dette \hl{skal} \st{er} sammenholdes \st{sammenholdt} med registerets data (design/subsampling).} 
 
 \section{Vurdering av datakvalitet}\label{sec:valdat}
 \guide{Angi viktige funn og en vurdering av resultatene fra
@@ -358,8 +360,8 @@ demografiske og sosiale forhold i pasientpopulasjonen.}
 \guide{Angi inklusjonskriterier for registeret, eksempelvis definert av
 diagnosekoder og/eller prosedyrekoder.}
 
-\section{Registerets spesifikke kvalitetsmål}\label{sec:regspe}
-\guide{Beskriv de viktigste mål/variabler/indikatorer som angir grad av
+\section{Registerets spesifikke kvalitetsindikatorer}\label{sec:regspe}
+\guide{Beskriv de viktigste variabler/indikatorer som angir grad av
 kvalitet (struktur-, prosess- og resultatmål). Se også
 \href{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Handbok_140303.pdf}{Registerhåndboka}\footnote{\url{http://www.kvalitetsregistre.no/getfile.php/Norsk/Dokumenter/Handbok_140303.pdf}}
 for ytterligere beskrivelse. Indikér hvilke av disse som vil egne seg som
@@ -466,13 +468,13 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
   \item Metodisk kvalitet
     \begin{itemize}
       \item Nye registrerende enheter/avdelinger
-      \item Forbedring av dekningsgrad på individnivå i registeret
+      \item Forbedring av dekningsgrad i registeret
       \item Endringer av rutiner for intern kvalitetssikring av data
       \item Oppfølging av resultater fra validering mot eksterne kilder
     \end{itemize}
   \item Fagutvikling og kvalitetsforbedring av tjenesten
     \begin{itemize}
-      \item Nye kvalitetsmål
+      \item Nye kvalitetsindikatorer
       \item Nye pasientrapporterte resultater som skal inn i registeret
       \item Utvidet bruk av pasientrapporterte resultater
       \item Nye demografiske variabler som skal inn i registeret
@@ -510,7 +512,8 @@ se respektive kapitler under Del \ref{par:rap}: \nameref{par:rap}.}
 \guide{Oversikt over vurderingspunkter som legges til grunn for
 stadieinndeling av registre med referanser til relevant informasjon
 gitt i årsrapporten. Denne delen fylles ut og er ment som en
-hjelp til registeret og ekspertgruppen i vurdering av registeret.}
+hjelp til registeret og ekspertgruppen i vurdering av registeret. Stadium 1
+er oppfylt når registeret har status som nasjonalt.}
 
 \bigskip
 \bigskip
@@ -534,7 +537,8 @@ hjelp til registeret og ekspertgruppen i vurdering av registeret.}
   \hline 	 
   \endlastfoot
    & \textbf{Stadium 2} & & \\
-  1 & Er i drift og samler data fra HF i alle helseregioner
+  1 & Er i drift og samler data fra \st{HF i alle helseregioner} \hl{alle
+      aktuelle HF}
     & \ref{cha:res} & \CheckedBox
     & \Square \\
   2 & Presenterer resultater på nasjonalt nivå & \ref{cha:res} & \Square
@@ -544,44 +548,44 @@ hjelp til registeret og ekspertgruppen i vurdering av registeret.}
   4 & Har en konkret plan for gjennomføring av analyser og løpende
       rapportering av resultater på sykehusnivå tilbake til deltakende
       enheter & \ref{sec:resfag} & \Square& \Square \\
-      5 & Har en oppdatert plan for videre utvikling av registeret
-      & Del \ref{par:for} & \Square& \Square \\
-   & & & \\
+  5 & Har en oppdatert plan for videre utvikling av registeret
+    & Del \ref{par:for} & \Square& \Square \\
+    & & & \\
 
    & \textbf{Stadium 3} & & \\
   6 & Kan redegjøre for registerets datakvalitet
     & \ref{sec:sik}, \ref{sec:metval}, \ref{sec:valdat} & \Square& \Square \\
   7 & Har beregnet dekningsgrad mot uavhengig datakilde
     & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square& \Square \\
-  8 & Registrerende enheter kan få utlevert egne aggregerte og nasjonale
-      resultater
-    & \ref{sec:resfag} & \Square & \Square \\
-  9 & Presenterer deltakende enheters etterlevelse av de viktigste
+  8 & \hl{Har dekningsgrad over 60 \%}
+    & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square& \Square \\
+  9 & Registrerende enheter \hl{skal} utover årsrapport kunne \st{kan} få
+      utlevert egne aggregerte og nasjonale resultater
+    & \ref{sec:resfag}, \hl{{\ref{sec:resled}}}, \st{{\ref{sec:off}}} & \Square & \Square \\
+  10 & Presenterer deltakende enheters etterlevelse av de viktigste
       nasjonale retningslinjer der disse finnes
     & \ref{sec:retbru} & \Square & \Square \\
-  10 & Har identifisert kliniske forbedringsområder basert på analyser fra
+  11 & Har identifisert kliniske forbedringsområder basert på analyser fra
        registeret & \ref{sec:ide} & \Square & \Square \\
-  11 & Brukes til klinisk kvalitetsforbedringsarbeid
+  12 & Brukes til klinisk kvalitetsforbedringsarbeid
     & \ref{sec:brures}, \ref{sec:evakva} & \Square & \Square \\
-  12 & Resultater anvendes vitenskapelig & \ref{sec:vitarb} & \Square
+  13 & Resultater anvendes vitenskapelig & \ref{sec:vitarb} & \Square
     & \Square \\
-  13 & Presenterer resultater for PROM/PREM & \ref{sec:pasutk} & \Square
+  14 & Presenterer resultater for PROM/PREM & \ref{sec:pasutk} & \Square
     & \Square \\
-  14 & Har en oppdatert plan for videre utvikling av registeret
+  15 & Har en oppdatert plan for videre utvikling av registeret
     & Del \ref{par:for} & \Square & \Square \\
-   & & & \\
+    & & & \\
 
    & \textbf{Stadium 4} & & \\
-  15 & Kan dokumentere registerets datakvalitet gjennom valideringsanalyser
+  16 & Kan dokumentere registerets datakvalitet gjennom valideringsanalyser
     & \ref{sec:valdat} & \Square & \Square \\
-  16 & Presenterer oppdatert dekningsgradsanalyse hvert 2. år
+  17 & Presenterer oppdatert dekningsgradsanalyse hvert 2. år
     & \ref{sec:met}, \ref{sec:endek}, \ref{sec:obs} & \Square & \Square \\
-  17 & Har dekningsgrad over 80\% & \ref{sec:obs} & \Square & \Square \\
-  18 & Registrerende enheter har løpende (on-line) tilgang til oppdaterte egne
-       og nasjonale resultater & \ref{sec:resfag}, \ref{sec:off} & \Square
+  18 & Har dekningsgrad over 80\% & \ref{sec:obs} & \Square & \Square \\
+  19 & Registrerende enheter har løpende (on-line) tilgang til oppdaterte egne
+      og nasjonale resultater & \ref{sec:resfag}, \ref{sec:resled} & \Square
     & \Square \\
-  19 & Presentere resultater på sosial ulikhet i helse & \ref{sec:sosdem}
-    & \Square & \Square \\
   20 & Resultater fra registeret er tilpasset og tilgjengelig for pasienter
     & \ref{sec:respas} & \Square & \Square \\
   21 & Kunne dokumentere at registeret har ført til kvalitetsforbedring/endret
