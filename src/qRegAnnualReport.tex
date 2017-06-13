@@ -102,7 +102,7 @@ indi-kator-er styrings-gruppe}
 % Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
 % Tas inn igjen ved å fjerne løkka rundt
 
-\iffalse
+%\iffalse
 \chapter*{Om årsrapportmalen}
 Etablering av en mal for årsrapport for anvendelse av de nasjonale medisinske
 kvalitetsregistre gjøres på bestilling av den interregionale styringsgruppen
@@ -197,10 +197,11 @@ som er fritt tilgjengelig og gratis i bruk.
     Versjonshåndtering vil bli flyttet fra subversion til git med 
     tilgjengeliggjøring gjennom GitHub. & Are Edvardsen \\
     3.1 & 13. juni 2017 & Endringer bedt om av interregional styringsgruppe,
-    ekspertgruppen og servicemiljøet i Helse Vest & Are Edvardsen \\
+    ekspertgruppen og servicemiljøet i Helse Vest. Eksperimentell del om
+    dataaktualitet (datakvalitet) er også lagt til & Are Edvardsen \\
   \label{tab:log}
 \end{longtable}
-\fi
+%\fi
 
 
 
@@ -335,6 +336,15 @@ kilder.}
 \guide{Per 31. desember for rapporteringsåret, angi antall
 individer/hendelser totalt og per institusjon. Kan også brytes opp i
 antall per år.}
+
+\section{Aktualitet (NYTT VURDERINGSPUNKT)}\label{sec:akt}
+\guide{Mange forbedringstiltak vil ha krav til at registeret forløpende
+oppdateres med nye, ferske data. Grad av hvor oppdatert registeret er kan
+måles i tid mellom en gitt hendelse (innleggelse, operasjon, oppfølging etc.) og
+registrering av hendelsen. Hvis det ikke er mulig å skaffe objektive mål for
+slike tidsdifferanser så er det mulig å gi en subjektiv vurdering basert på
+erfarig fra typisk arbeidsflyt og rutiner for innregistrering i registeret. Gi
+også en vurdering av om regsteret har en tilfredsstillende aktualitet.}
 
 \section{Metode for beregning av dekningsgrad}\label{sec:met}
 \guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
