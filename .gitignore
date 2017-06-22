@@ -3,3 +3,14 @@
 *.out
 *.pdf
 *.toc
+*.4ct
+*.4tc
+*.css
+*.docx
+*.dvi
+*.html
+*.idv
+*.lg
+*.odt
+*.tmp
+*.xref
