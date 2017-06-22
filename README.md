@@ -2,7 +2,7 @@
 
 RARTemplate inneholder LaTeX kilden til mal for årsrapport. Tilsvarende utgave
 i MS Word finnes på nasjonalt servicemiljø sin
-[hjemmeside](https://www.kvalitetsregistre.no/artikkel/arsrapportmal-og-veileder-til-stadieinndeling).
+[hjemmeside](https://www.kvalitetsregistre.no/artikkel/mal-innlevering-av-arsrapport-2016).
 
 Kildekoden ligger i katalogen "src" sammen med en tilsvarende utskriftsklar
 utgave av årsrapportmalen og alle filer kan "klones" (ved bruk av
