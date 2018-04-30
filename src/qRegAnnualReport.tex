@@ -43,6 +43,7 @@
 \usepackage[raggedright]{titlesec}
 \usepackage{color,hyperref}
 \usepackage{soul}
+\usepackage[color]{changebar}
 
 % fix feil i v 2.10.1 av titlesec?
 \usepackage{etoolbox}
@@ -86,10 +87,10 @@ plan for forbedringstiltak}}
 
 
 % stil for inngående tekst
-\newcommand{\newtext}[1]{\hl{#1}}
+\newcommand{\newtext}[1]{\cbstart\textcolor{green}{#1\cbend}}
 
 % stil for utgående tekst
-\newcommand{\oldtext}[1]{\sout{#1}}
+\newcommand{\oldtext}[1]{\cbdelete\textcolor{red}{#1}}
 
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
@@ -363,8 +364,15 @@ gjelder for og hvordan analysene er gjort (metode).}
 av aktuelle sykehus/avdelinger som sender data til registeret.}
 
 \section{Dekningsgrad}\label{sec:obs}
-\guide{Angi resultat av dekningsgradsanalyse på individnivå for hele registeret
-og tidspunkt for gjennomføring av dekningsgradsanalysen.}
+\guide{
+	\oldtext{Angi resultat av dekningsgradsanalyse på individnivå for hele
+	registeret og tidspunkt for gjennomføring av dekningsgradsanalysen.}
+	\newtext{
+	Angi resultat av dekningsgradsanalyse på individnivå for hele
+	registeret totalt og tidspunkt for gjennomføring av
+	dekningsgradsanalysen.
+	}
+}
 
 \section{Prosedyrer for intern sikring av datakvalitet}\label{sec:sik}
 \guide{Beskriv infrastruktur og rutiner (eksempelvis
