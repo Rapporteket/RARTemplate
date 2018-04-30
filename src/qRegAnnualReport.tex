@@ -44,6 +44,13 @@
 \usepackage{color,hyperref}
 \usepackage{soul}
 
+% fix feil i v 2.10.1 av titlesec?
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
 % Gjør alle lenker mørkeblå
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
