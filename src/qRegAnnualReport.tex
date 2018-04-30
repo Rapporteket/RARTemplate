@@ -78,11 +78,17 @@ plan for forbedringstiltak}}
 \renewcommand\Affilfont{\itshape\small}
 
 
+% stil for inngående tekst
+\newcommand{\newtext}[1]{\hl{#1}}
+
+% stil for utgående tekst
+\newcommand{\oldtext}[1]{\sout{#1}}
+
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
 \newcommand{\guide}[1] {
-	\textit{[\textcolor{guidegray}{Veiledning -- SLETTES I ENDELIG UTGAVE
-	AV RAPPORTEN: #1}]}
+	\textit{[\textcolor{guidegray}{\newtext{Veiledning -- SLETTES I ENDELIG
+	UTGAVE:} #1}]}
 	}
 
 
