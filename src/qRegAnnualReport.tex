@@ -95,7 +95,9 @@ plan for forbedringstiltak}}
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
 \newcommand{\guide}[1]{
-  \textit{[\textcolor{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]}}
+  \itshape[\color{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]\normalfont}
+%\long \def \guidepar[#1] {
+%  \textit{[\textcolor{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]}}
 
 
 % overstyre mulige ord-deling-er
@@ -378,7 +380,8 @@ av aktuelle sykehus/avdelinger som sender data til registeret.}
 \guide{Angi resultat av dekningsgradsanalyse på individnivå for hele registeret
 totalt og tidspunkt for gjennomføring av dekningsgradsanalysen. Dekningsgrad på
 sykehus- eller enhetsnivå bør oppgis og gjerne på gruppenivå (for eksempel
-diagnosegrupper) der dette er relevant. % must be a \par here
+diagnosegrupper) der dette er relevant.
+
 Resultater av frafallsundersøkelser bør om mulig også angis. Det betyr å
 undersøke om populasjonen som ikke er inkludert i registeret er sammenlignbar
 med populasjonen i registeret. Hvis populasjonene er like indikerer det at man
