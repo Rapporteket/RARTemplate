@@ -94,15 +94,14 @@ plan for forbedringstiltak}}
 
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
-\newcommand{\guide}[1] {
-	\textit{[\textcolor{guidegray}{\newtext{Veiledning -- SLETTES VED UTFYLLING:} #1}]}
-	}
+\newcommand{\guide}[1]{
+  \textit{[\textcolor{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]}}
 
 
 % overstyre mulige ord-deling-er
 \hyphenation{stadium-vurder-ing system-atiske pasi-ent-rap-porterte
 retnings-linjer hjemmelsgrunnlag data-behandlings-ansvar nasjon-ale
-indi-kator-er styrings-gruppe}
+indi-kator-er styrings-gruppe validerings-studien}
 
 
 \begin{document}
@@ -341,17 +340,15 @@ fagsystemer, helsearbeidere, pasienter) og hvordan innsamlingen skjer
 
 
 
-\chapter{\textcolor{red}{Metodisk kvalitet}\textcolor{blue}{Datakvalitet}}\label{cha:kva}
+\chapter{Datakvalitet}\label{cha:kva}
 \guide{Status og evaluering av registerets  datakvalitet. Dekningsgraden angir
-forholdet mellom registrerte \newtext{hendelser/}individer og det man basert på uavhengige kilder
-(f.eks.
+forholdet mellom registrerte hendelser/individer og det man basert på
+uavhengige kilder (f.eks.
 \href{https://www.kvalitetsregistre.no/malpopulasjon-og-dekningsgrad\#idx-1}
 {NPR}\footnote{\url{https://www.kvalitetsregistre.no/malpopulasjon-og-dekningsgrad\#idx-1}})
 vet eller antar skal være det totale antall mulige registrerbare
-\newtext{hendelser/}individer i det aktuelle året. \oldtext{Validitet angir graden av korrekthet for
-én eller et sett av opplysninger gjerne basert på en sammenligning mot andre,
-uavhengige kilder.} \newtext{Man bør kunne si noe om alle dimensjoner ved
-datakvalitet:
+hendelser/individer i det aktuelle året. Man bør kunne si noe om alle
+dimensjoner ved datakvalitet:
 \begin{itemize}
   \item kompletthet (dekningsgrad og ufullstendige registreringer)
   \item validitet (gyldighet)
@@ -363,11 +360,11 @@ Se
 \href{https://www.kvalitetsregistre.no/om-datakvalitet\#kvalitetsdimensjoner}
 {Valideringshåndboken}\footnote{\url{https://www.kvalitetsregistre.no/om-datakvalitet\#kvalitetsdimensjoner}}
 for nærmere beskrivelse.}
-}
+
 
 \section{Antall registreringer}\label{sec:reg}
-\guide{Per 31. desember for rapporteringsåret, angi antall
-individer/hendelser \newtext{per institusjon og år, samt} totalt.}
+\guide{Per 31. desember for rapporteringsåret, angi antall individer/hendelser
+per institusjon og år, samt totalt.}
 
 \section{Metode for beregning av dekningsgrad}\label{sec:met}
 \guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
@@ -378,22 +375,15 @@ gjelder for og hvordan analysene er gjort (metode).}
 av aktuelle sykehus/avdelinger som sender data til registeret.}
 
 \section{Dekningsgrad}\label{sec:obs}
-\guide{
-	\oldtext{Angi resultat av dekningsgradsanalyse på individnivå for hele
-	registeret og tidspunkt for gjennomføring av dekningsgradsanalysen.}
-	\newtext{
-	Angi resultat av dekningsgradsanalyse på individnivå for hele
-	registeret totalt og tidspunkt for gjennomføring av
-	dekningsgradsanalysen. Dekningsgrad på sykehus- eller
-        enhetsnivå bør oppgis og gjerne på gruppenivå (for eksempel
-        diagnosegrupper) der dette er relevant. \newline
-	Resultater av
-        frafallsundersøkelser bør om mulig også angis. Det betyr å
-        undersøke om populasjonen som ikke er inkludert i registeret er
-        sammenlignbar med populasjonen i registeret. Hvis populasjonene er like
-        indikerer det at man i registeret har et tilfeldig utvalg og at
-        manglende registreriner derfor er mindre kritisk.
-	}}
+\guide{Angi resultat av dekningsgradsanalyse på individnivå for hele registeret
+totalt og tidspunkt for gjennomføring av dekningsgradsanalysen. Dekningsgrad på
+sykehus- eller enhetsnivå bør oppgis og gjerne på gruppenivå (for eksempel
+diagnosegrupper) der dette er relevant. % must be a \par here
+Resultater av frafallsundersøkelser bør om mulig også angis. Det betyr å
+undersøke om populasjonen som ikke er inkludert i registeret er sammenlignbar
+med populasjonen i registeret. Hvis populasjonene er like indikerer det at man
+i registeret har et tilfeldig utvalg og at manglende registreriner derfor er
+mindre kritisk.}
 
 \section{Prosedyrer for intern sikring av datakvalitet}\label{sec:sik}
 \guide{Beskriv infrastruktur og rutiner (eksempelvis
@@ -402,43 +392,37 @@ riktige og komplette data fra innregistrerende enheter og i registeret
 sentralt.}
 
 \section{Metode for validering av data i registeret}\label{sec:metval}
-\guide{\newtext{Validitet angir graden av korrekthet for én eller et sett av
-opplysninger gjerne basert på sammenligning mot andre, uavhengige kilder.}
-Beskriv hvilke eksterne kilder som er benyttet og hvordan
-dette er sammenholdt med registerets data. Beskriv metoden for
-valideringsstudien\newtext{, eksempelvis:
+\guide{Validitet angir graden av korrekthet for én eller et sett av opplysninger
+gjerne basert på sammenligning mot andre, uavhengige kilder. Beskriv hvilke
+eksterne kilder som er benyttet og hvordan dette er sammenholdt med registerets
+data. Beskriv metoden for valideringsstudien, eksempelvis:
 \begin{itemize}
-  \item hvilke sykehus, avdelinger eller enheter som ble validert og
-  hvordan/hvorfor disse ble valgt,
+  \item hvilke sykehus, avdelinger eller enheter som ble validert samt
+  hvordan og hvorfor disse ble valgt,
   \item hvilke variabler som ble validert,
   \item tidsrom som dekkes av de data som benyttes i studien,
   \item hvor stor andel av hendelser eller pasienter som ble benyttet i
     studien, og
   \item andre hensyn som er tatt under valideringsstudien.
-\end{itemize}}
-} 
+\end{itemize}} 
 
 \section{Vurdering av datakvalitet}\label{sec:valdat}
-\guide{\newtext{Følgende vil være relevant å ta med i vurdering av
-datakvalitet:}
+\guide{Følgende vil være relevant å ta med i vurdering av datakvalitet:
 \begin{itemize}
-  \item Angi viktige funn og en vurdering av resultatene fra
-    \oldtext{valideringsanalyser} \newtext{alle dimensjoner av datakvalitet der
-    dette er relevant og utført; validitet, relibialitet og kompletthet. Et
-    eksempel er} \oldtext{slik som} funn av systematiske feil \newtext{eller}
-    \oldtext{,} tilfeldige feil og antatt effekt dette har på
-    \oldtext{validitet} \newtext{datakvalitet} for hele registeret.
+  \item Angi viktige funn og en vurdering av resultatene fra alle dimensjoner
+    av datakvalitet der dette er relevant og utført; validitet, relibialitet og
+    kompletthet. Et eksempel er funn av systematiske feil eller tilfeldige feil
+    og antatt effekt dette har på datakvalitet for hele registeret.
   \item Angi graden av kompletthet for sentrale variabler.
-  \item \newtext{Vis registreringsforsinkelse (aktualitet), det vil si tid fra
-    hendelse (eksempelvis innleggelse eller utskriving) til hendelsen er
-    registrert i registeret}
-    (registreres egentlig det samme på alle avdelinger)
-  \item \newtext{Gi en vurdering av sammenlignbarhet (registreres egentlig det 
-    samme på alle avdelinger og over tid)  for
-    enkeltvariabler i registeret og oppgi områder i registeret som eventuelt er
-    kjent ikke-sammelignbare og/eller vis til dokumentasjon av endinger i
-    variabelsettet}
-    \item \newtext{Si noe om reliabiliteten, dvs. 'treffsikkerheten'/variasjonen ved gjentatte målinger}
+  \item Vis registreringsforsinkelse (aktualitet), det vil si tid fra hendelse
+    (eksempelvis innleggelse eller utskriving) til hendelsen er registrert i
+    registeret (registreres egentlig det samme på alle avdelinger)
+  \item Gi en vurdering av sammenlignbarhet (registreres egentlig det  samme på
+    alle avdelinger og over tid)  for enkeltvariabler i registeret og oppgi
+    områder i registeret som eventuelt er kjent ikke-sammelignbare og/eller vis
+    til dokumentasjon av endinger i variabelsettet
+    \item Si noe om reliabiliteten, dvs. treffsikkerheten eller variasjonen ved
+      gjentatte målinger
 \end{itemize}}
 
 
@@ -459,11 +443,11 @@ diagnosekoder og/eller prosedyrekoder.}
 \guide{Beskriv de viktigste variabler/indikatorer som angir grad av
 kvalitet (struktur-, prosess- og resultatmål). Se også
 \href{https://www.kvalitetsregistre.no/registerarbeid}{kvalitetsregistre.no}\footnote{\url{https://www.kvalitetsregistre.no/registerarbeid}}
-for ytterligere beskrivelse. \newtext{Av 
-kvalitetsindikatorbeskrivelsen skal det tydelig framgå hvordan indikatorene er definert. \it{For eksempel}
-om det gjøres utvalg på subgrupper av registerpopulasjonen og om man ser på alle hendelser eller bare 
-nyeste hendelse for hver pasient.} \oldtext{Indikér} \newtext{Angi gjerne} hvilke av disse
-\newtext{indikatorene} som vil egne seg som nasjonale kvalitetsindikatorer.}
+for ytterligere beskrivelse. Av kvalitetsindikatorbeskrivelsen skal det tydelig
+framgå hvordan indikatorene er definert. For eksempel om det gjøres utvalg på
+subgrupper av registerpopulasjonen og om man ser på alle hendelser eller bare
+nyeste hendelse for hver pasient. Angi gjerne hvilke av disse indikatorene som
+vil egne seg som nasjonale kvalitetsindikatorer.}
 
 \section{Pasientrapporterte resultat- og erfaringsmål (PROM og PREM)}\label{sec:pasutk}
 \guide{Beskriv hvilke instrumenter som benyttes eller angi hvor langt
@@ -486,15 +470,15 @@ som variabler i registeret. Der nasjonale retningslinjer ikke finnes bør
 \textit{beskrives. Resultater i seg selv beskrives i kap. \ref{cha:res}.}}
 
 \section{Identifisering av kliniske forbedringsområder}\label{sec:ide}
-\guide{Beskriv kliniske forbedringsområder som er identifisert på bakgrunn
-av analyser fra registeret \newtext{i løpet av de siste tre årene}.}
+\guide{Beskriv kliniske forbedringsområder som er identifisert på bakgrunn av
+analyser fra registeret i løpet av de siste tre årene.}
 
 \section{Tiltak for klinisk kvalitetsforbedring initiert av
 registeret}\label{sec:brures}
 \guide{Angi konkrete prosjekter for klinisk kvalitetsforbedring initiert av
-registeret \newtext{i løpet av de siste tre årene}. Beskriv hvordan registeret
-bidrar til oppstart og gjennomføring av klinisk kvalitetsforbedringsarbeid
-lokalt hos innregistrerende institusjoner.}
+registeret i løpet av de siste tre årene. Beskriv hvordan registeret bidrar til
+oppstart og gjennomføring av klinisk kvalitetsforbedringsarbeid lokalt hos
+innregistrerende institusjoner.}
 
 \section{Evaluering av tiltak for klinisk kvalitetsforbedring (endret praksis)}\label{sec:evakva}
 \guide{Beskriv resultater av gjennomførte tiltak for kvalitetsforbedringer
