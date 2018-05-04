@@ -4,7 +4,7 @@
 %   SKDE vedlikeholder LaTeX-koden som er under versjonskontroll på           %
 %   github (https://github.com/Rapporteket/RARTemplate).                      %
 %                                                                             %
-%%% SKDE, Are Edvardsen 2013-2017                                           %%%
+%%% SKDE, Are Edvardsen 2013-2018                                           %%%
 
 
 % Suggested scheme for converitng to MS Word file:
@@ -95,9 +95,9 @@ plan for forbedringstiltak}}
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
 \newcommand{\guide}[1]{
-  \itshape[\color{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]\normalfont}
-%\long \def \guidepar[#1] {
-%  \textit{[\textcolor{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]}}
+  \itshape[\color{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]
+  \normalfont
+}
 
 
 % overstyre mulige ord-deling-er
@@ -114,7 +114,7 @@ indi-kator-er styrings-gruppe validerings-studien}
 
 
 % Ta ut hele kapittelet ved bruk til faktisk rapport.
-% Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen\ldots
+% Av en eller annen grunn ønskes også versjonsoversikten tatt ut fra malen...
 % Tas inn igjen ved å fjerne løkka rundt
 
 %\iffalse
@@ -220,7 +220,10 @@ som er fritt tilgjengelig og gratis i bruk.
     \\
     4.1 & 4. mai 2018 & Endringer i veiledende tekst til årsrapporter for 2017
     vist med utgående tekst i rødt og ny tekst i blått & Are Edvardsen, Lena
-    Ringstad Olsen
+    Ringstad Olsen \\
+    5.0 & 4. mai 2018 & For bruk i årsrapporter for 2017 med utvidet
+    veiledningstekst, særlig i kapitlene 'Datakvalitet' og 'Fagutvikling og
+    klinisk kvalitetsforbedring' & Are Edvardsen
   \label{tab:log}
 \end{longtable}
 %\fi
