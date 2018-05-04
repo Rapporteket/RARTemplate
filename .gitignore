@@ -13,3 +13,6 @@
 *.odt
 *.tmp
 *.xref
+*.swp
+*.cb
+*.cb2
