@@ -87,7 +87,7 @@ plan for forbedringstiltak}}
 
 
 % stil for inngående tekst
-\newcommand{\newtext}[1]{\cbstart\textcolor{green}{#1\cbend}}
+\newcommand{\newtext}[1]{\cbstart\textcolor{blue}{#1\cbend}}
 
 % stil for utgående tekst
 \newcommand{\oldtext}[1]{\cbdelete\textcolor{red}{#1}}
@@ -339,12 +339,12 @@ fagsystemer, helsearbeidere, pasienter) og hvordan innsamlingen skjer
 
 \chapter{Datakvalitet}\label{cha:kva}
 \guide{Status og evaluering av registerets  datakvalitet. Dekningsgraden angir
-forholdet mellom registrerte individer og det man basert på uavhengige kilder
+forholdet mellom registrerte \newtext{hendelser/}individer og det man basert på uavhengige kilder
 (f.eks.
 \href{https://www.kvalitetsregistre.no/malpopulasjon-og-dekningsgrad\#idx-1}
 {NPR}\footnote{\url{https://www.kvalitetsregistre.no/malpopulasjon-og-dekningsgrad\#idx-1}})
 vet eller antar skal være det totale antall mulige registrerbare
-individer i det aktuelle året. \oldtext{Validitet angir graden av korrekthet for
+\newtext{hendelser/}individer i det aktuelle året. \oldtext{Validitet angir graden av korrekthet for
 én eller et sett av opplysninger gjerne basert på en sammenligning mot andre,
 uavhengige kilder.} \newtext{Man bør kunne si noe om alle dimensjoner ved
 datakvalitet:
@@ -354,11 +354,7 @@ datakvalitet:
   \item sammenlignbarhet (registreres egentlig det samme på alle avdelinger)
   \item aktualitet (registreringsforsinkelse)
   \item reliabilitet (variasjon ved gjentatte målinger)
-  \item relevans (fyller registerets variable et kunnskapsbehov, nærhet til
-    feltet)
-  \item nytteverdi (entydige, lettfattelige og godt beskrevne variabler samt
-    tilgjengelige resultater)
-\end{itemize}
+  \end{itemize}
 Se
 \href{https://www.kvalitetsregistre.no/om-datakvalitet\#kvalitetsdimensjoner}
 {Valideringshåndboken}\footnote{\url{https://www.kvalitetsregistre.no/om-datakvalitet\#kvalitetsdimensjoner}}
@@ -367,8 +363,7 @@ for nærmere beskrivelse.}
 
 \section{Antall registreringer}\label{sec:reg}
 \guide{Per 31. desember for rapporteringsåret, angi antall
-individer/hendelser totalt og per institusjon. Kan også brytes opp i
-antall per år.}
+individer/hendelser \newtext{per institusjon og år, samt} totalt.}
 
 \section{Metode for beregning av dekningsgrad}\label{sec:met}
 \guide{Angi kilder/registre som er brukt, for hvilken periode beregningene
@@ -387,7 +382,8 @@ av aktuelle sykehus/avdelinger som sender data til registeret.}
 	registeret totalt og tidspunkt for gjennomføring av
 	dekningsgradsanalysen. Dekningsgrad på sykehus- eller
         enhetsnivå bør oppgis og gjerne på gruppenivå (for eksempel
-        diagnosegrupper) der dette er relevant. Resultater av
+        diagnosegrupper) der dette er relevant. \newline
+	Resultater av
         frafallsundersøkelser bør om mulig også angis. Det betyr å
         undersøke om populasjonen som ikke er inkludert i registeret er
         sammenlignbar med populasjonen i registeret. Hvis populasjonene er like
@@ -408,10 +404,11 @@ Beskriv hvilke eksterne kilder som er benyttet og hvordan
 dette er sammenholdt med registerets data. Beskriv metoden for
 valideringsstudien\newtext{, eksempelvis:
 \begin{itemize}
-  \item hvilke sykehus, avdelinger eller enheter som ble validert,
+  \item hvilke sykehus, avdelinger eller enheter som ble validert og
+  hvordan/hvorfor disse ble valgt,
   \item hvilke variabler som ble validert,
   \item tidsrom som dekkes av de data som benyttes i studien,
-  \item størrelsen på andelen av hendelser eller pasienter som ble benyttet i
+  \item hvor stor andel av hendelser eller pasienter som ble benyttet i
     studien, og
   \item andre hensyn som er tatt under valideringsstudien.
 \end{itemize}}
@@ -431,13 +428,13 @@ datakvalitet:}
   \item \newtext{Vis registreringsforsinkelse (aktualitet), det vil si tid fra
     hendelse (eksempelvis innleggelse eller utskriving) til hendelsen er
     registrert i registeret}
-  \item \newtext{Gi en vurdering av nytteverdi og relevans, herunder vise til
-    komplett variabelbeskrivelse og begrunnelse for alle variabler i
-    registeret.}
-  \item \newtext{Gi en vurdering av sammenlignbarhet over tid for
+    (registreres egentlig det samme på alle avdelinger)
+  \item \newtext{Gi en vurdering av sammenlignbarhet (registreres egentlig det 
+    samme på alle avdelinger og over tid)  for
     enkeltvariabler i registeret og oppgi områder i registeret som eventuelt er
     kjent ikke-sammelignbare og/eller vis til dokumentasjon av endinger i
     variabelsettet}
+    \item \newtext{Si noe om reliabiliteten, dvs. 'treffsikkerheten'/variasjonen ved gjentatte målinger}
 \end{itemize}}
 
 
@@ -458,11 +455,10 @@ diagnosekoder og/eller prosedyrekoder.}
 \guide{Beskriv de viktigste variabler/indikatorer som angir grad av
 kvalitet (struktur-, prosess- og resultatmål). Se også
 \href{https://www.kvalitetsregistre.no/registerarbeid}{kvalitetsregistre.no}\footnote{\url{https://www.kvalitetsregistre.no/registerarbeid}}
-for ytterligere beskrivelse. \newtext{Beskrivelse av
-kvalitetsindikatorer bør tydelig angi hvordan disse er definert, eksempelvis
-hvilke pasientgrupper som inngår, om man ser på alle hendelser per pasient eller
-bare de nyeste hendelser, om man bare ser på pasienter som er i live ved en gitt
-dato etc.} \oldtext{Indikér} \newtext{Angi gjerne} hvilke av disse
+for ytterligere beskrivelse. \newtext{Av 
+kvalitetsindikatorbeskrivelsen skal det tydelig framgå hvordan indikatorene er definert. \it{For eksempel}
+om det gjøres utvalg på subgrupper av registerpopulasjonen og om man ser på alle hendelser eller bare 
+nyeste hendelse for hver pasient.} \oldtext{Indikér} \newtext{Angi gjerne} hvilke av disse
 \newtext{indikatorene} som vil egne seg som nasjonale kvalitetsindikatorer.}
 
 \section{Pasientrapporterte resultat- og erfaringsmål (PROM og PREM)}\label{sec:pasutk}
