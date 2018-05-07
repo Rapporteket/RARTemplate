@@ -11,4 +11,4 @@ oppe til høyre.
 
 Det er også mulig å sammenligne ulike utgaver av malen for å se hva som er
 endret, [eksempelvis mellom gjeldende utgave og den som ble benyttet i
-rapportering for 2015](https://github.com/Rapporteket/RARTemplate/compare/abf0103...master)
+rapportering for 2016](https://github.com/Rapporteket/RARTemplate/compare/7cfd1aa...master)
