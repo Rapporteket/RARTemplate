@@ -17,3 +17,5 @@
 *.swp
 *.cb
 *.cb2
+.Rproj.user
+RARTemplate.Rproj
