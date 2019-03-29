@@ -14,7 +14,4 @@ grønne knappen "Clone or download" oppe til høyre.
 Det er også mulig å sammenligne ulike utgaver av kildekoden til malen for å se
 hva som er endret,
 [eksempelvis mellom gjeldende utgave og den som ble benyttet i
-rapportering for 2016](https://github.com/Rapporteket/RARTemplate/compare/7cfd1aa...master).
-Alle disse endringene er det også mulig å se [samlet i pdf-utgave av malen](https://github.com/Rapporteket/RARTemplate/blob/63d35950ed89a11de1568da5c0bf16d08dd71b0f/src/qRegAnnualReport.pdf)
-der <font color="blue">nytt innhold er markert med blå tekst</font> og
-<font color="red">slettet innhold er markert med rød tekst</font>.
+rapportering for 2017](https://github.com/Rapporteket/RARTemplate/compare/4b03112...v6.1).
