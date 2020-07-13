@@ -14,4 +14,4 @@ grønne knappen "Clone or download" oppe til høyre.
 Det er også mulig å sammenligne ulike utgaver av kildekoden til malen for å se
 hva som er endret,
 [eksempelvis mellom gjeldende utgave og den som ble benyttet i
-rapportering for 2017](https://github.com/Rapporteket/RARTemplate/compare/4b03112...v6.1).
+rapportering for 2018](https://github.com/Rapporteket/RARTemplate/compare/v6.1...v7.2).
