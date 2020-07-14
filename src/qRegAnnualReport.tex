@@ -37,12 +37,12 @@
 \usepackage{babel}
 \usepackage{authblk}
 \usepackage{longtable}
+\usepackage{microtype}
 \usepackage{multicol}
 \usepackage{color}
 \usepackage{wasysym}
 \usepackage[raggedright]{titlesec}
-\usepackage{color,hyperref}
-%\usepackage{soul}
+\usepackage[breaklinks]{hyperref}
 \usepackage[color]{changebar}
 
 % fix feil i v 2.10.1 av titlesec?
@@ -95,7 +95,7 @@ plan for forbedringstiltak}}
 % stil for veiledende tekst
 \definecolor{guidegray}{rgb}{0.2,0.2,0.2}
 \newcommand{\guide}[1]{
-  \itshape[\color{guidegray}{Veiledning -- SLETTES VED UTFYLLING: #1}]
+  \itshape[\color{guidegray}{\raggedright Veiledning -- SLETTES VED UTFYLLING: #1}]
   \normalfont
 }
 
@@ -349,10 +349,10 @@ registerets formål, med hovedfokus på kvalitetsindikatorer og PROM/PREM.}
 
 \chapter{Resultater}\label{cha:res}
 \guide{Tekst, tabeller og figurer der resultater fra registeret presenteres,
-fortrinnsvis på sykehusnivå/enhetsnivå der dette er mulig.
-Kapitlet bes strukturert slik at resultater for sentrale kvalitetsindikatorer
-relevante for pasientrettet kvalitetsforbedring og resultater viktige for
-vurdering av stadieinndeling presenteres først.}
+fortrinnsvis på sykehusnivå/enhetsnivå der dette er mulig. Kapitlet bes 
+strukturert slik at resultater for sentrale kvalitetsindikatorer relevante
+for pasientrettet kvalitetsforbedring og resultater viktige for vurdering av
+stadieinndeling presenteres først.}
 
 \section{Kvalitetsindikatorer og PROM/PREM}\label{sec:indpp}
 \guide{Resultater for alle kvalitetsindikatorer, samt resultater for PROM/PREM.
