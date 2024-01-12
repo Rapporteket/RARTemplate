@@ -1,0 +1,699 @@
+% Mal for årsrapport for kvalitetsregistre
+
+\documentclass{article}
+
+% ----- Pakker ----- %
+
+% Oppsett på dokument
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[skip=10pt]{parskip}
+
+% Språk
+\usepackage[norsk]{babel}
+\usepackage{csquotes}
+
+% Figurer
+\usepackage{graphicx}
+
+% Farger på overskrifter
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+% Tabeller
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+
+% Symboler
+\usepackage{amssymb}
+
+% Referanser
+\usepackage[style=apa]{biblatex}
+\usepackage{hyperref}
+
+% ----- Definisjoner ----- %
+
+% Referanseliste
+\addbibresource{referanser.bib}
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+
+% Kulepunkter på alle nivå
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\bullet$}
+
+% Midtstilt tekst i tabellceller
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Farge på overskrifter a la Word
+\definecolor{headline}{RGB}{46, 116, 181}
+\definecolor{headline2}{RGB}{31, 77, 120}
+
+\titleformat{\section}
+{\color{headline}\huge}
+{\color{headline}\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{headline}\Large}
+{\color{headline}\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{headline2}\large}
+{\color{headline2}\thesubsubsection}{1em}{}
+
+% Sjekkbokser
+\newcommand{\sjekkboks}{
+    \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}
+}
+
+\newcommand{\tomboks}{
+    $\Box$
+}
+
+% ----- Klar til å starte dokumentet ----- %
+
+\begin{document}
+
+    % Forside
+    \begin{center}
+        \textbf{Navn på register} \\
+        \textbf{Årsrapport for [årstall]} \\
+        \vspace{5mm}
+        \textbf{Ola Normann\textsuperscript{1}, Medel Svensson\textsuperscript{2} og Kari Normann\textsuperscript{1}} \\
+        \vspace{15mm}
+        \textsuperscript{1}\textbf{et Sykehus, et Foretak, et Sted} \\
+        \vspace{5mm}
+        \textsuperscript{2}\textbf{et annen adresse, et annet Sted} \\
+        \vspace{5mm}
+        \textbf{Dato}
+    \end{center}
+    
+    \newpage
+    
+    % Innholsfortegnelse
+    \tableofcontents
+    \newpage
+    
+    % Tabell over forkortelser
+    \textbf{\color{headline}\large Forkortelser brukt i rapporten}
+    
+    \begin{center}
+        \begin{tabularx}{\linewidth}{| p{4cm} | X |}
+            \hline 
+            Forkortelser & Forklaringer \\ \hline
+            & \\ \hline
+            & \\ \hline
+            & \\ \hline
+            & \\ \hline
+            & \\ \hline
+        \end{tabularx}
+    \end{center}
+    
+    \newpage
+    
+    % Oppsummeringsside
+
+    % Denne første siden skal være en oppsummeringsside med noen hovedtall fra registeret. 
+    % Det er fritt opp til hvert register hvordan denne siden skal se ut. 
+    % Se eventuelt andre registres årsrapporter for inspirasjon.
+    % Fjern all eksempelkoden på denne siden. 
+    
+    Eksempler på referanser: 
+    % (Navn, årstall)
+    \autocite{eksempel1}
+    % Navn (årstall)
+    \textcite{eksempel2}
+    % To referanser i samme parentes
+    \autocite{eksempel1, eksempel2}
+
+    % Lite mellomrom mellom linjer
+    \vspace{5mm}
+    
+    Eksempel på figur: 
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Eksempelfigur.png}
+        \caption{Figurtekst}
+        \label{fig:eksempel}
+    \end{figure}
+
+    % Referere til figur
+    Referanse til figur: se figur \ref{fig:eksempel}
+
+    \vspace{5mm}
+    
+    Eksempel på tabell: 
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Kolonne 1 & Kolonne 2 & Kolonne 3 \\ \hline
+            Verdi 1 & Verdi 2 & Verdi 3 \\ \hline
+        \end{tabular}
+        \caption{Tabelltekst}
+        \label{tab:eksempel}
+    \end{table}
+
+    % Referere til tabell
+    Referanse til tabell: se tabell \ref{tab:eksempel}
+    
+    \newpage
+    
+    % ----- Del 1 ----- %
+    
+    \begin{center}
+        \huge
+        Del 1 \\
+        \vspace{5mm}
+        Resultater fra registeret
+        \normalsize
+    \end{center}
+    % La resten av siden stå tom
+    \newpage
+    
+    
+    % Sammendrag
+    
+    \section{Sammendrag}
+    % Kortfattet sammendrag av de viktigste elementer man fra registerets side ønsker å formidle i årsrapporten. 
+    % De viktigste resultater for behandlingskvalitet og kvalitetsforbedringstiltak bør angis.
+    
+    \subsection{Summary in English}
+    % Optionally, provide a summary of the annual report. 
+    % Highlights from quality assessment and improvements are relevant here. 
+    
+    \newpage
+    
+    
+    % Resultater
+    
+    \section{Resultater}
+    
+    \subsection{Kvalitetsindikatorer}
+    % Resultater for alle kvalitetsindikatorer. 
+    % - Det skal foreligge en samletabell med navn og målnivå på alle kvalitetsindikatorene i innledningen til kapittelet.
+    % - I alle figurer vises resultater på enhetsnivå der dette er mulig.
+    % - Vis prosenter/gjennomsnitt og målnivå for hver enhet, i tillegg til samlet nasjonalt resultat.
+    % - Dersom det er særlige hensyn som må tas ved tolkning av resultatene, anbefales registrene å beskrive dette.
+    % - I tilknytning til hver kvalitetsindikator skal følgende tabell fylles ut:
+    
+    \begin{center}
+        \begin{tabular}{|p{5cm}|p{8cm}|} \hline
+        
+            % Beskriv hva indikatoren viser, og eventuelt kilde (modul/skjema/PROM-data osv.)
+            Definisjon/beskrivelse & \\ \hline
+            
+            % Angi om det er en struktur-, prosess- eller resultatindikator
+            Type indikator & \\ \hline
+            
+            % Angi nivå for måloppnåelse
+            Måloppnåelse & \\ \hline
+            
+            % Angi hvilke(n) nasjonal/internasjonal retningslinje(r) indikatoren er basert på, 
+            % eller om indikatoren er basert på bestepraksis. Oppgi aktuelle referanser
+            Kunnskapsgrunnlag & \\ \hline
+            
+            % Angi hvordan teller og nevner er beregnet. 
+            % Eksempel: 
+            % - Teller: Antall pasienter som fikk medikament x 
+            % - Nevner: Antall pasienter under 80 år med hoveddiagnose xx.x
+            Beregning & \\ \hline
+            
+        \end{tabular}
+    \end{center}
+    
+    \subsection{Pasientrapporterte data (PROM/PREM)}
+    % Beskriv hvilke instrumenter/skjema som brukes for innsamling av pasientrapporterte utfallsmål eller erfaringsmål (PROM/PREM). 
+    % Beskriv utvalgte resultater for PROM/PREM som ikke inngår i kap. 2.1.
+    % - I alle figurer vises resultater på enhetsnivå der det er mulig.
+    
+    
+    \subsection{Andre analyser}
+    % Resultater for øvrige analyser som ikke inngår i kap. 2.1 eller 2.2, 
+    % for eksempel demografi og beskrivelse av pasientpopulasjonen. 
+    % Kan med fordel deles opp i flere underkapitler.
+
+    
+    \newpage
+    
+    
+    % ----- Del 2 -----
+    
+    \begin{center}
+        \huge
+        Del 2 \\
+        \vspace{5mm}
+        Administrative opplysninger
+        \normalsize
+    \end{center}
+    % La resten av siden stå tom
+    \newpage
+    
+    
+    % Registerbeskrivelse
+    
+    \section{Registerbeskrivelse}
+    
+    % NB: Husk å oppdatere tabellen ved eventuelle endringer. 
+    \begin{center}
+        \begin{longtable}{| p{0.4\linewidth} | p{0.6\linewidth} |} \hline
+            Bakgrunn for registeret	& 
+            % Beskriv kort bakgrunnen for registeret
+            
+            \\ \hline
+            Type register &
+            % Angi om det er et diagnose-, prosedyre- eller tjenesteregister
+            
+            \\ \hline
+            Årstall etablert &
+            % Angi årstall registeret ble etablert
+            
+            \\ \hline
+            Årstall nasjonal godkjenning &
+            % Angi årstall registeret fikk nasjonal status
+            
+            \\ \hline
+            Årstall for start av datainnsamling &
+            % Angi årstall det nasjonale registeret startet datainnsamling
+            
+            \\ \hline
+            Registerets formål &
+            % Oppgi registerets formål
+            
+            \\ \hline
+            Analyser som belyser registerets formål &
+            % Beskriv kort hvilke analyser registeret gjør for å belyse formålet, 
+            % f.eks. antall kvalitetsindikatorer og om resultatene publiseres på enhetsnivå for å belyse uønsket variasjon
+            
+            \\ \hline
+            Juridisk hjemmelsgrunnlag &
+            % Angi registerets juridiske hjemmelsgrunnlag
+            
+            \\ \hline
+            Databehandler &
+            % Angi registerets databehandler
+            
+            \\ \hline
+            Databehandlingsansvarlig &
+            % Angi registerets databehandlingsansvarlig
+            
+            \\ \hline 
+            Faglig leder/ registersekretariat med kontaktinformasjon &
+            % Angi registerets faglige leder og registersekretariat, med kontaktinformasjon.
+            
+            \\ \hline
+            Fagrådets medlemmer &
+            % Angi hvem som er fagrådets leder og medlemmer, med kontaktinformasjon
+            
+            \\ \hline
+            Aktivitet i fagrådet &
+            % angi aktivitet i fagrådet i rapporteringsåret, f.eks. antall møter eller om det er spesielle saker fagrådet har arbeidet med
+            
+            \\ \hline
+            Inklusjonskriterier &
+            % Angi inklusjonskriteriene for registeret, f.eks. ved diagnose-/eller prosedyrekoder
+            
+            \\ \hline
+            Metode for datafangst &
+            %  Beskriv kort hvilke data registeret samler inn, og kilde (f.eks. sykehus, pasienten). Eksempel:
+            % - Hovedskjema (fra 2012)
+            %   - Registreres av alle sykehus som behandler hjerneslag
+            % - Oppfølgingsskjema (fra 2012)
+            %   - Pasientrapporterte data innhentes 3 måneder (+/- 2 uker) etter utskrivning fra sykehuset
+            % - Trombektomi-modul (fra 2020)
+            %   - Registreres av sykehus som utfører trombektomi]
+            
+            \\ \hline
+            Teknisk løsning for datafangst, og årstall for start &
+            % Angi hvilken teknisk løsning registeret benytter for datafangst, og fra hvilket år, ev om registeret mangler teknisk løsning
+            
+            \\ \hline
+            Metadata &
+            % Angi om registeret har publisert sine metadata på helsedata.no, og årstall for start
+            
+            \\ \hline
+            Innsynsløsning &
+            % Angi om registeret har etablert innsynsløsning via Helsenorge, og årstall for start
+            
+            \\ \hline
+            Antall pasienter/skjema/hendelser i rapporteringsåret &
+            % Angi antall pasienter/skjema/hendelser (velg det nivået som er fornuftig for registeret) i rapporteringsåret
+            
+            \\ \hline
+            Totalt antall pasienter/skjema/hendelser &
+            % Angi antall pasienter/skjema/hendelser (velg det nivået som er fornuftig for registeret) totalt siden registeret fikk nasjonal status
+            
+            \\ \hline
+            Stadium og nivå &
+            % Angi hvilket stadium og nivå registeret er på, i hht Ekspertgruppens vurdering av fjorårets årsrapport
+            
+            \\ \hline
+         \end{longtable}
+    \end{center}
+    
+    \newpage
+    
+    \section{Datakvalitet}
+    
+    \subsection{Tilslutning og antall registreringer}
+    % Oppgi antall individer/hendelser per enhet og nasjonalt i rapporteringsåret, i tabellformat. 
+    % Enheter som skulle levert data, men som ikke gjør det, angis i tabellen med "leverer ikke data". 
+    % Dersom registerets pasientgruppe ikke behandles i alle regioner, presiseres dette.
+    
+    
+    \subsection{Dekningsgrad og responsrate}
+
+    
+    \subsubsection{Metode for beregning av dekningsgrad}
+    % Angi: 
+    % - ekstern kilde/register som er brukt for beregning av dekningsgrad på individnivå 
+    % - hvilken periode beregningene gjelder for, samt tidspunkt for gjennomføring av dekningsgradsanalysen 
+    % - hvordan analysene er gjort (metode) 
+    % - dersom det ikke er hensiktsmessig å beregne dekningsgrad mot uavhengig kilde, skal registeret redegjøre for dette og beskrive hvilken annen metode som benyttes for beregning av dekningsgrad
+    
+    
+    \subsubsection{Siste beregnede dekningsgrad}
+    % Oppgi dekningsgrad i hele tall. Angi:
+    % - resultat av dekningsgradsanalyse på individnivå for alle pasientgrupper/moduler samlet 
+    % - dersom aktuelt: resultat av dekningsgradsanalyse på individnivå per pasientgruppe/modul
+    % - dekningsgrad angis på sykehus- eller enhetsnivå
+
+    % Dersom det er formålstjenlig, kan både tilslutning, antall individer/hendelser og dekningsgrad oppgis i én tabell, enten her eller i kap. 4.1. Henvis da til aktuelt delkapittel.]
+    
+    
+    \subsubsection{Responsrate for pasientrapporterte data}
+    % Oppgi responsrate for besvarelse av pasientrapporterte data, totalt og per sykehus/enhet hvis mulig.
+    
+    
+    \subsection{Vurdering av datakvalitet}
+    % Status og evaluering av registerets datakvalitet. 
+    % For de siste 5 år: Beskriv kort hvilke metoder som er benyttet for beregning/vurdering av datakvalitet. 
+    % Angi viktige funn av resultatene fra undersøkelser av variabelkompletthet, korrekthet (validitet) og reliabilitet (samsvar) for kvalitetsindikatorene, og ev. i tillegg noen av de mest sentrale variablene. 
+    %
+    % 1. Kompletthet: angi grad av kompletthet for sentrale variabler og variabler som inngår i kvalitetsindikatorer for rapporteringsåret.
+    % 2. Korrekthet: angi grad av korrekthet for de undersøkte variablene sammenlignet med en gullstandard (f.eks. journal),
+    %    og når undersøkelsen ble utført. 
+    % 3. Reliabilitet, dvs. samsvar: angi grad av reliabilitet for de undersøkte variablene, og når undersøkelsen ble utført.
+    % 
+    % Gi en overordnet vurdering av funnene i datakvalitetsundersøkelsene og hvilken betydning dette har for tolkning av resultater fra registeret.
+    % Hvis registeret har utført ytterligere validering/dokumentasjon av datakvalitet, beskrives også dette her. 
+    % For nærmere beskrivelser av ulike datakvalitetsdimensjoner, se https://www.kvalitetsregistre.no/node/38.
+
+    
+    \newpage
+    
+    
+    % Pasientrettet kvalitetsforbedring
+    
+    \section{Pasientrettet kvalitetsforbedring}
+
+    
+    \subsection{Identifiserte forbedringsområder}
+    % Beskriv hvilke pasientrettede kvalitetsforbedringsområder som er identifisert gjennom registerets resultater/analyser for rapporteringsåret.
+    % Benytt punktliste.
+    
+     
+    \subsection{Igangsatte/utførte forbedringstiltak}
+    %  For å oppfylle kravene til nivå B i stadieinndelingen må registeret både dokumentere i kap. 5.1 at det i rapporteringsåret har identifisert forbedringsområder, og i kap. 5.2 at det er igangsatt eller kontinuert pasientrettet kvalitetsforbedringsarbeid.
+    %
+    % For å oppfylle kravene til nivå A i stadieinndelingen skal registeret dokumentere resultater i kap 5.2 fra kvalitetsforbedrende tiltak som har vært igangsatt i løpet av de siste tre år. Tiltakene skal være basert på kunnskap fra registeret. 
+    %
+    % Fyll ut en tabell for hver kvalitetsindikator/forbedringsområde (kolonne A), 
+    % tid tiltaket startet og evt. ble avsluttet (kolonne B), med beskrivelse av igangsatte eller kontinuerte/pågående tiltak (kolonne C), 
+    % og resultater dersom dette foreligger (kolonne D). 
+    % Alle tiltak og resultater tilhørende samme kvalitetsindikator/forbedringsområde beskrives i samme tabell. 
+    % Resultat foreligger ofte ikke samme år som tiltaket ble startet, men gjerne først etter 2-3 år. 
+    % I slike tilfeller bes det om at tabellen fylles ut også for tiltak som ble igangsatt 2 og 3 år før rapporteringsåret.
+    
+    
+    \newpage
+    
+    \textbf{Tiltak og resultat} \\
+    \begin{centering}
+        \begin{tabularx}{\linewidth}{| X | X | X | X |}
+            \hline
+            \color{red}{Kolonne A: } & \color{red}{Kolonne B: } & \color{red}{Kolonne C: } & \color{red}{Kolonne D: } \\
+            Aktuelt forbedringsområde & Tiltaksperiode for tiltaket & Hva ble gjort av hvem? & Hvilke resultater ble oppnådd? \\ \hline
+            
+            % Skriv inn tittel/navn på indikator/forbedringsområde.
+            
+            &
+            % Oppgi når tiltaket startet, om det pågår ennå eller når det evt. ble avsluttet.
+            
+            &
+            %  Beskriv konkrete tiltak for pasientrettet kvalitetsforbedring som er igangsatt, kontinuert/pågående eller gjennomført i rapporteringsåret. Data fra registeret må være benyttet. 
+            % Gi en tydelig beskrivelse av målsettingen, hvilke konkrete tiltak som er satt inn, og hvem som har gjennomført tiltaket/ hvor det er gjennomført.
+            
+            &
+            % Beskriv resultater av gjennomførte tiltak som har vært igangsatt i løpet av de siste tre år dersom disse foreligger.
+            
+            \\ \hline
+                 
+        \end{tabularx}
+    \end{centering}
+    
+    \newpage
+
+    
+    % Formidling av resultater
+    
+    \section{Formidling av resultater}
+    % Beskriv hvordan resultater fra registeret formidles til relevante mottakere. 
+    % Dersom registeret ikke er i gang med slik formidling, skal registeret beskrive en konkret plan for gjennomføring av analyser og jevnlig rapportering av resultater til relevante mottakere. 
+    % Punktene 1-3 er obligatorisk å fylle ut. Registeret kan i tillegg velge å fylle ut flere punkter, dersom relevant.
+    
+    \vspace{5mm}
+    
+    \begin{center}
+        \begin{tabularx}{\linewidth}{| p{.5cm} | p{6cm} | p{2cm} | X |}
+            \hline
+            1. & 
+                Årsrapport - resultatdel \vspace{\baselineskip} % La neste linje stå tom
+                
+                % Tekst etter denne linjen
+                
+                & 
+                % hvor ofte?
+                
+                &
+                % beskriv målgruppen/mottakerne for resultatene
+                
+                \\ \hline
+                
+            2. &
+                Kvalitetsregistre.no \vspace{\baselineskip} % La neste linje stå tom
+                
+                % skriv hvor mange indikatorer som publiseres og på hvilket nivå (enhet/regional/nasjonal)
+                
+                &
+                % hvor ofte?
+
+                &
+                %  beskriv målgruppen/mottakerne for resultatene
+                
+                \\ \hline
+                
+            3. &
+                Resultater til registrerende enheter \vspace{\baselineskip} % La neste linje stå tom
+                
+                % Skriv hvilken form registrerende enheter kan få tilgjengeliggjort/utlevert egne aggregerte og nasjonale resultater
+                
+                & 
+                % hvor ofte? 
+                
+                & 
+                % beskriv målgruppen/mottakerne for resultatene
+                
+                \\ \hline
+                
+            4. &
+                % Frivillig: Angi ev andre formidlingsformer, som for eksempel tilpassede rapporter til pasientgruppen, nasjonale kvalitetsindikatorer, postere/abstracts på seminarer etc. Sett inn én rad per formidlingskanal. 
+                
+                &
+                % hvor ofte?
+                
+                &
+                % beskriv målgruppen/mottakerne for resultatene
+                
+                \\ \hline
+    
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
+    
+    
+    % Samarbeid og forskning
+    
+    \section{Samarbeid og forskning}
+    
+    \subsection{Samarbeid med andre fagmiljøer og helse- og kvalitetsregistre}
+    % Beskriv eventuelle samarbeid registeret har med andre registre eller relevante fagmiljø, nasjonalt eller internasjonalt.
+    
+    
+    \subsection{Datautlevering fra registrene}
+    % Angi antall datautleveringer fra registeret i rapporteringsåret. 
+    % Hvis ønskelig kan det angis antall utleveringer de siste tre år. 
+    % Utleveringer som er en del av det daglige arbeidet i et registersekretariat skal ikke inngå i denne oversikten. 
+    % Dette gjelder blant annet utlevering av data til kvalitetsregistre.no, tertialrapporter/kvartalsrapporter og rapporter ifm kvalitetsforbedringsprosjekter. Dette kan oppgis i kap. 6. 
+    
+    
+    \vspace{5mm}
+    \begin{centering}
+        \begin{tabularx}{\linewidth}{| X | P{2cm} | P{2cm} | P{2cm} |}
+        \hline
+            Utlevering av data til følgende formål: & 2023 & 2022 & 2021 \\
+            \hline
+            Forskning & & & \\
+            \hline
+            Kvalitetsforbedring og styringsformål\footnotemark & & & \\
+            \hline
+            Andre formål (f.eks. til media) & & & \\
+            \hline
+            Totalt & & & \\
+            \hline
+        \end{tabularx}
+        \footnotesize{\textsuperscript{1}Gjelder blant annet datautlevering etter forespørsel fra HF eller RHF, data til nasjonale indikatorer, Helseatlas o.l.}
+    \end{centering}
+    
+    
+    \subsection{Vitenskapelige artikler}
+    % Angi titler på vitenskapelige artikler (publikasjonsliste) i fagfellevurderte tidsskrifter i løpet av de siste tre år, der data fra registeret inngår i datamaterialet.
+    
+    
+    \newpage
+    
+    
+    % ----- Del 3 -----
+    
+    \begin{center}
+        \huge
+        Del 3 \\
+        \vspace{5mm}
+        Stadievurdering og plan for videre utvikling av registeret
+        \normalsize
+    \end{center}
+    % La resten av siden stå tom
+    \newpage
+    
+    % Referanser til vurdering av stadium
+    
+    \section{Referanser til vurdering av stadium}
+    
+    \subsection{Vurderingspunkter}
+    
+    % Oversikt over vurderingspunkter som legges til grunn for stadieinndeling av registre med referanser til relevant informasjon gitt i årsrapporten. Denne delen fylles ut og er ment som en hjelp til registeret og ekspertgruppen i vurdering av registeret. Stadieveilederens veiledningstekst for hvert punkt beskriver utfyllende hva som skal til for at krav vurderes som oppfylt. Stadium 1 er oppfylt når registeret har status som nasjonalt. 
+    
+    \vspace{5mm}
+    Tabell: Vurderingspunkter for \textit{[Navn på register]} og registerets egen evaluering. 
+
+    % Erstatt "\tomboks" med "\sjekkboks" for å huke av på egen vurdering
+    \begin{centering}
+        \begin{longtable}{l p{0.6\textwidth} l c c}
+        \hline \hline
+        & & & \multicolumn{2}{l}{Egen vurdering \textit{[årstall]}} \\
+        Nr & Beskrivelse & Kapittel & Ja & Nei \\
+        & & & & \\
+        \hline \hline
+        & & & & \\
+        & \textbf{Stadium 2} & & & \\
+        & & & & \\
+        1 & Samler data fra alle aktuelle helseregioner & 4.1 & \tomboks & \tomboks \\
+        2 & Presenterer kvalitetsindikatorene på nasjonalt nivå & 2.1 & \tomboks & \tomboks \\
+        3 & Har en konkret plan for gjennomføring av dekningsgradsanalyser  & 4.2 & \tomboks & \tomboks \\
+        4 & Har en konkret plan for gjennomføring av analyser og jevnlig rapportering av resultater på enhetsnivå tilbake til deltakende enheter  & 6 & \tomboks & \tomboks \\
+        5 & Har en oppdatert plan for videre utvikling  & 9 & \tomboks & \tomboks \\
+        & & & & \\
+        & \textbf{Stadium 3} & & & \\
+        & & & & \\
+        6 & Kan dokumentere kompletthet av kvalitetsindikatorer & 4.3 & \tomboks & \tomboks \\
+        7 & Kan dokumentere dekningsgrad på minst 60 \% i løpet av siste to år & 4.2 & \tomboks & \tomboks \\
+        8 & Registeret skal minimum årlig presentere kvalitetsindikatorresultater interaktivt på nettsiden kvalitetsregistre.no & 6 & \tomboks & \tomboks \\
+        9 & Registrerende enheter kan få utlevert eller tilgjengeliggjort egne aggregerte og nasjonale resultater & 6 & \tomboks & \tomboks \\
+        10 & Presenterer deltakende enheters etterlevelse av de viktigste faglige retningslinjer & 2.1 & \tomboks & \tomboks \\
+        11 & Har en oppdatert plan for videre utvikling av registeret & 9 & \tomboks & \tomboks \\
+        & & & & \\
+        & \textbf{Stadium 4} & & & \\
+        & & & & \\
+        12 & Har i løpet av de siste 5 år dokumentert om innsamlede data er korrekte og reliable & 4.3 & \tomboks & \tomboks \\
+        13 & Kan dokumentere dekningsgrad på minst 80 \% i løpet av siste to år & 4.2 & \tomboks & \tomboks \\
+        14 & Presenterer minst to ganger årlig kvalitetsindikatorresultater interaktivt på nettsiden kvalitetsregistre.no & 6 & \tomboks & \tomboks \\
+        15 & Registeret skal dokumentere at data anvendes vitenskapelig & 7.2, 7.3 & \tomboks & \tomboks \\
+        16 & Presenterer resultater på enhetsnivå for PROM/PREM (der dette er mulig) & 2.2 & \tomboks & \tomboks \\
+        & & & & \\
+        & & & & \\
+        & \textbf{Nivå A, B eller C} & & & \\
+        & \textbf{Sett ett kryss for aktult nivå registeret oppfyller} & & \textbf{Ja} & \\
+        & & & & \\
+        17 & Registeret kan dokumentere resultater fra kvalitetsforbedrende tiltak som har vært igangsatt i løpet av de siste tre år. Tiltakene skal være basert på kunnskap fra registeret & 5.2 & \tomboks & \\
+        & & & & \\
+        & \textbf{Nivå B} & & & \\
+        18 & Registeret kan dokumentere at det i rapporteringsåret har identifisert forbedringsområder, og at det er igangsatt eller kontinuert/videreført pasientrettet kvalitetsforbedringsarbeid & 5.1, 5.2 & \tomboks & \\
+        & & & & \\
+        & \textbf{Nivå C} & & & \\
+        19 & Oppfyller ikke krav til nivå B & & \tomboks & \\
+        & & & & \\
+        \hline \hline
+        
+        \end{longtable}
+    \end{centering}
+    
+    \newpage
+    
+    
+    % Utvikling av registeret
+    
+    \section{Utvikling av registeret}
+    
+    \subsection{Registerets oppfølging av fjorårets vurdering fra Ekspertgruppen}
+    
+    % Beskriv hvordan registeret har fulgt opp ekspertgruppens kommentarer i vurderingstekst til forrige årsrapport.
+    
+    \subsection{Planer og behov}
+    
+    % Beskriv: 
+    % - konkrete og realistiske tiltak for videre utvikling til neste stadium innen 3 år fra nåværende stadium ble oppnådd. 
+    %   Planen bør omfatte hvert punkt som per nå ikke er oppfylt i neste stadium. 
+    %   For registre som har oppnådd høyeste stadium, oppgis plan for å opprettholde stadiet, samt eventuelt videreutvikling av registeret.
+    % - andre forbedringstiltak som er planlagt gjennomført for neste kalenderår
+    % - behov for tekniske og andre forbedringer
+    % 
+    % Punktlisten under er et forslag til hva som kan inngå i en slik beskrivelse. Det kan gjerne tas med andre tiltak enn de nevnte forslagene, og punkter som ikke er aktuelle kan fjernes.
+    % 
+    % - Datafangst
+    %   - Forbedring av metoder for fangst av data
+    %     - Ressurser
+    %     - Tekniske forbedringer
+    %     - Organisatoriske (eksempelvis bedre organisering ved lokale sykehusavdelinger)
+    % - Datakvalitet
+    %   - Nye registrerende enheter/avdelinger 
+    %   - Forbedring av dekningsgrad i registeret 
+    %   - Forbedring av registerets kompletthet
+    %   - Forbedring av rutiner for intern kvalitetssikring av data 
+    %   - Oppfølging av resultater fra validering mot eksterne kilder
+    % - Fagutvikling og kvalitetsforbedring av tjenesten
+    %   - Nye kvalitetsindikatorer 
+    %   - Nye variabler for pasientrapporterte resultater 
+    %   - Utvidet bruk av pasientrapporterte resultater 
+    %   - Nye demografiske variabler 
+    %   - Utvidet bruk av demografiske variabler 
+    %   - Bidrag til etablering av nasjonale retningslinjer eller nasjonale kvalitetsindikatorer 
+    %   - Registrerende enheters etterlevelse av faglige retningslinjer 
+    %   - Identifiserte kliniske forbedringsområder 
+    %   - Økt bruk av resultater til pasientrettet kvalitetsforbedring i hver enkelt institusjon/enhet
+    % - Formidling av resultater
+    %   - Forbedring av resultatformidling til deltagende fagmiljø
+    %   - Forbedring av resultatformidling til administrasjon og ledelse
+    %   - Forbedring av resultatformidling til pasienter
+    %   - Forbedring av hvordan resultater på institusjonsnivå publiseres
+    % - Samarbeid og forskning
+    %   - Nye samarbeidspartnere
+    %   - Forskningsprosjekter og annen vitenskapelig aktivitet
+    
+    \newpage
+    
+    % Referanseliste
+    \printbibliography[heading={bibnumbered}, title={Litteratur}]
+
+\end{document}
