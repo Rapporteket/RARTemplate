@@ -2,7 +2,7 @@
 
 RARTemplate inneholder LaTeX-koden til mal for årsrapport. Tilsvarende utgave
 i MS Word finnes på nasjonalt servicemiljø sin
-[hjemmeside](https://www.kvalitetsregistre.no/arsrapportmal).
+[hjemmeside](https://www.kvalitetsregistre.no/registerdrift/krav-til-registre/arsrapport/#maler-til-arsrapport).
 
 Kildekoden ligger i katalogen [src](https://github.com/Rapporteket/RARTemplate/tree/master/src). 
 Filene kan lastes ned eller klones som et git-repo ved å trykke på den
